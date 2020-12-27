@@ -18,7 +18,7 @@
 
 
 class My_Walker_Nav_Menu extends Walker_Nav_Menu {
-	function start_lvl( &$output, $depth ) {
+	function start_lvl( &$output, $depth = 0, $args = NULL ) {
 		$indent = str_repeat( "\t", $depth );
 		$output .= "\n$indent<ul class=\"sub-menu level-" . $depth . "\">\n";
 	}
