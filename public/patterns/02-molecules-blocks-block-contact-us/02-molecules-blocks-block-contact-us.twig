@@ -1,0 +1,69 @@
+<div class="contact-us {{ contact_us_modifier }}">
+    {% if headline %}
+        {% include "_headline-element.twig" with {
+            'headline_modifier' : 'text--lg',
+            'headline_text' : headline,
+            'headline_type' : 'h3'
+        } %}
+    {% endif %}
+
+    <ul class="list list--removeBaseStyles {{ list_modifier }}">
+        <li class="list__item">
+        {% if phone %}
+            {% include '_link-element.twig' with {
+                'link_href' : 'tel:6108734091',
+                'link_modifier' : 'link--phone',
+                'link_text' : '<i class="fa fa-phone" aria-hidden="true"></i> 610-873-4091'
+            } %}
+        {% endif %}
+        </li>
+        <li class="list__item">
+        {% if email %}
+            {% include '_link-element.twig' with {
+                'link_href' : 'mailto:animalclinicatthorndale@verizon.net',
+                'link_modifier' : 'link--email',
+                'link_text' : '<i class="fa fa-envelope" aria-hidden="true"></i> Email Us'
+            } %}
+        {% endif %}
+        </li>
+        <li class="list__item">
+        {% if directions %}
+            {% include '_link-element.twig' with {
+                'link_href' : 'https://www.google.com/maps/place/Animal+Clinic+at+Thorndale,+p.c./@40.0056514,-75.7478063,17z/data=!3m1!4b1!4m5!3m4!1s0x89c65f3a54250b8f:0x80d74fcff4f2ec50!8m2!3d40.0056473!4d-75.7456176',
+                'link_modifier' : 'link--directions',
+                'link_target' : 'blank',
+                'link_text' : '<i class="fa fa-map-marker" aria-hidden="true"></i> Get Directions'
+            } %}
+        {% endif %}
+        </li>
+        <li class="list__item">
+        {% if hours %}
+            {% include '_link-element.twig' with {
+                'link_href' : '/contact-us',
+                'link_modifier' : 'link--hours',
+                'link_text' : '<i class="fa fa-clock-o" aria-hidden="true"></i> Today\'s Hours ' ~ todaysHours
+            } %}
+        {% endif %}
+        </li>
+    </ul><!-- /list -->
+
+    {% if social_media %}
+        {% include 'social-media.twig' with {
+            "socialMedia_icons" : {
+                "1" : {
+                "fa" : "facebook",
+                "url" : "#"
+                },
+                "2" : {
+                "fa" : "google-plus",
+                "url" : "#"
+                },
+                "3" : {
+                "fa" : "pinterest-p",
+                "url" : "#"
+                }
+            },
+            "socialMedia_modifier" : ""
+        } %}
+    {% endif %}
+</div><!-- /contact-us -->

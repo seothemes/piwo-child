@@ -1,0 +1,25 @@
+<footer class="footer {{ footer_modifier ? footer_modifier : '' }}" id="colophon" role="colophon">
+	<div class="footer__top">
+		<div class="content-wrapper">
+			<div class="grid-wrapper--0 grid-wrapper--align-items-center">
+				<div class="col col--xs-1of3">
+					{% include "logo.twig" %}
+				</div><!-- col -->
+
+				<div class="col col--xs-2of3">
+					{% include "block-contact-us-icons.twig" %}
+				</div><!-- col -->
+			</div><!-- /grid-wrapper--0 -->
+		</div><!-- /content-wrapper -->
+	</div><!-- /footer__top -->
+
+	<div class="footer__bottom">
+		<div class="content-wrapper">
+			<div class="grid-wrapper--0 grid-wrapper--align-items-center">
+				<div class="col">
+					&copy; {{"now"|date('Y')}} Your Business Corp. All rights reserved.
+				</div><!-- col -->
+			</div><!-- /grid-wrapper--0 -->
+		</div><!-- /content-wrapper -->
+	</div><!-- /footer__bottom -->
+</footer>

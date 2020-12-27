@@ -1,0 +1,35 @@
+<div class="hours background--light">
+    <div class="hours__text">
+        {{ hours_text }}
+    </div><!-- /hours_text -->
+    <ul class="hours__daily">
+        <li {{ is_today == 'monday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Mon</div>
+            <div>{{ hours_monday }}</div>
+        </li>
+        <li {{ is_today == 'tuesday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Tue</div>
+            <div>{{ hours_tuesday }}</div>
+        </li>
+        <li {{ is_today == 'wednesday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Wed</div>
+            <div>{{ hours_wednesday }}</div>
+        </li>
+        <li {{ is_today == 'thursday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Thu</div>
+            <div>{{ hours_thursday }}</div>
+        </li>
+        <li {{ is_today == 'friday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Fri</div>
+            <div>{{ hours_friday }}</div>
+        </li>
+        <li {{ is_today == 'saturday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Sat</div>
+            <div>{{ hours_saturday }}</div>
+        </li>
+        <li {{ is_today == 'sunday' ? 'class="is-today"' : '' }}>
+            <div class="hours__weekday">Sun</div>
+            <div>{{ hours_sunday }}</div>
+        </li>
+    </ul><!-- /hours__daily -->
+</div><!-- /hours -->

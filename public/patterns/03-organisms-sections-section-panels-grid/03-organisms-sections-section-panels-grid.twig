@@ -1,0 +1,37 @@
+<div class="content-wrapper">
+	<div class="grid-wrapper--0">
+		<div class="col">
+			{% if panels_headline %}
+				{% include "_headline-h3.twig" with {
+					'headline_modifier' : 'text--center',
+					'headline_text' : headline_text
+				} %}
+			{% endif %}
+
+			{% if panels %}
+				<div class="panels">
+					<div class="panel">
+						<div class="panel__back text--align-center" style="align-items: center; justify-content: center;">
+							{% include "_headline-h3.twig" with {
+								"headline_modifier" : "text--xl",
+								"text_h3" : "Animal Clinic at Thorndale"
+							} %}
+
+							<img src="../../images/icon-paw.png" />
+
+							{% include "_headline-h4.twig" with {
+								"headline_modifier" : "text--lg",
+								"text_h4" : "Professional care by caring professionals"
+							} %}
+
+						</div><!-- /panel__back -->
+					</div><!-- /panel -->
+
+                    {% for panel in panels %}
+						{% include "block-panel.twig" %}
+					{% endfor %}
+				</div><!--/panels-->
+			{% endif %}
+		</div><!-- /col -->
+	</div><!-- /grid-wrapper--0 -->
+</div><!-- /content-wrapper -->

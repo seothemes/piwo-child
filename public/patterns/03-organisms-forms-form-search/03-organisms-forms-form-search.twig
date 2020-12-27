@@ -1,0 +1,21 @@
+<form action="{{ action }}" class="form--search" method="get">
+	{% include "input.twig" with {
+		'input_modifier' : '',
+		'input_name': 'search',
+		'input_placeholder': 'Search...',
+        'input_type' : 'search',
+		'input_value': ''
+	} %}
+
+	{% include "input-hidden.twig" with {
+		'input_modifier' : '',
+		'name': 'id',
+		'value': ''
+	} %}
+
+	{% include "input.twig" with {
+		'input_modifier' : '',
+        'input_type' : 'submit',
+		'input_value': 'Submit Input',
+	} %}
+</form>

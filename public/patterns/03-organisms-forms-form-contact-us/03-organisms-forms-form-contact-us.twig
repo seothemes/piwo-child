@@ -1,0 +1,55 @@
+<form action="{{ action }}" class="block form--contact-us" method="post">
+	<div class="grid-wrapper--0">
+		<div class="col col--sm-1of2">
+			{% include "input.twig" with {
+				'label_text' : 'First name',
+				'input_name' : 'fName',
+				'input_type' : 'text'
+			} %}
+		</div><!-- /col -->
+
+		<div class="col col--sm-1of2">
+			{% include "input.twig" with {
+				'label_text' : 'Last name',
+				'input_name' : 'lName',
+				'input_type' : 'text'
+			} %}
+		</div><!-- /col -->
+
+		<div class="col col--sm-1of2">
+			{% include "input.twig" with {
+				'label_text' : 'Email',
+				'input_name' : 'email',
+				'input_type' : 'email'
+			} %}
+		</div><!-- /col -->
+
+		<div class="col col--sm-1of2">
+			{% include "input.twig" with {
+				'label_text' : 'Phone',
+				'input_name' : 'phone',
+				'input_type' : 'phone'
+			} %}
+		</div><!-- /col -->
+
+		<div class="col col--sm-1of2">
+			{% include "input-group.twig" with {
+				'label_text' : 'Checkbox',
+				'input_id' : 'cb-id',
+				'input_name' : 'cb-name',
+				'input_type' : 'checkbox',
+				'input_value' : 'CB-Value'
+			} %}
+		</div><!-- /col -->
+
+		<div class="col text--align-center">
+			{% include "input.twig" with {
+				'input_modifier' : 'btn',
+				'input_name' : 'submit',
+				'input_placeholder' : 'Placeholder text',
+				'input_type' : 'submit',
+				'input_value': 'Submit Input'
+			} %}
+		</div><!-- /col -->
+	</div><!-- /grid-wrapper--0 -->
+</form>

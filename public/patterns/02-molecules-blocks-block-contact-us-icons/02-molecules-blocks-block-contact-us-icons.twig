@@ -1,0 +1,14 @@
+<div class="contactUs">
+	<ul class="list list--removeBaseStyles list--inline">
+	{% for contact in contactUsIcons %}
+		<li class="list__item">
+			{% include "link.twig" with {
+				'link_modifier': contact.link_modifier,
+				'link_href': contact.href,
+				'link_target': contact.target,
+				'link_text': '<i class="fa fa-' ~ contact.fa ~ '" aria-hidden="true"></i>' ~ contact.text,
+			} %}
+		</li>
+	{% endfor %}
+	</ul>
+</div><!-- /contactUs -->

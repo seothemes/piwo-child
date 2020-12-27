@@ -1,0 +1,67 @@
+{	
+	"Web": {
+		"description": "A descriptive summary",
+		"icon": "icon_web",
+		"weight" : "5"
+	},
+	"Mobile - Responsive Web": {
+		"description": "A descriptive summary",
+		"icon": "icon_responsive",
+		"weight" : "5"
+	},
+	"Mobile App - Smartphone": {
+		"description": "A descriptive summary",
+		"icon": "icon_mobile",
+		"weight" : "5"
+	},
+	"Mobile App - Tablet": {
+		"description": "A descriptive summary",
+		"icon": "icon_tablet",
+		"weight" : "3"
+	},
+	"Social Media": {
+		"description": "A descriptive summary",
+		"icon": "icon_social",
+		"weight" : "5"
+	},
+	"SMS - Text": {
+		"description": "A descriptive summary",
+		"icon": "icon_sms",
+		"weight" : "3"
+	},
+	"Email": {
+		"description": "A descriptive summary",
+		"icon": "icon_mail",
+		"weight" : "5"
+	},
+	"Push Notifications": {
+		"description": "A descriptive summary",
+		"icon": "icon_notice",
+		"weight" : "4"
+	},
+	"Chat - Live": {
+		"description": "A descriptive summary",
+		"icon": "icon_chat",
+		"weight" : "3"
+	},
+	"Smartwatch" : {
+		"description": "A descriptive summary",
+		"icon": "icon_watch",
+		"weight" : "2"
+	},
+	"Kiosk - POS": {
+		"description": "A descriptive summary",
+		"icon": "icon_pos",
+		"weight" : "3"
+	},
+	"Chat - Bots": {
+		"description": "A descriptive summary",
+		"icon": "icon_chatbot",
+		"weight" : "3"
+	},
+	"AR - VR": {
+		"description": "A descriptive summary",
+		"icon": "icon_VR",
+		"weight" : "1"
+	}
+}

@@ -1,0 +1,9 @@
+{% if link_id %}
+	{% set link_id = 'id="' ~ link_id ~ '"' %}
+{% endif %}
+
+{% if link_target %}
+	{% set link_target = 'target="_' ~ link_target ~ '"' %}
+{% endif %}
+
+<a class="link {{ link_modifier }}" {{ link_id }} href="{{ link_href }}" {{ link_target }}>{{ link_text | raw }}</a>

@@ -1,0 +1,18 @@
+<div class="colorPalettes">
+	{% for color in colorPalette %}
+	<div class="colorPalette colorPalette--swatch">
+		<h3 class="headline">{{ color.name }}</h3>
+
+		<div class="color">
+			<div class="swatch__viewColor" style="background-color:{{ color.hex }};"></div>
+			<ul class="swatch__values">
+				<li class="color__hex">HEX: {{ color.hex }}</li>
+
+				{% if color.rgb %}
+					<li class="color__rgb">RGB: {{ color.rgb }}</li>
+				{% endif %}
+			</ul>
+		</div>
+	</div>
+	{% endfor %}
+</div>

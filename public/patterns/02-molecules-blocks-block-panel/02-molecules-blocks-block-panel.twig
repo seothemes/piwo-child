@@ -1,0 +1,27 @@
+<div class="panel {{ panel.modifier }}">
+    <div class="panel__back text--align-center">
+        <img src="{{ panel.icon | raw }}" />
+
+        {% include "_headline-h3.twig" with {
+            "headline_modifier" : "text--xl",
+            "text_h3" : panel.headline
+        } %}
+
+        {% include "text-paragraph.twig" with {
+            "paragraph_text" : panel.description
+        } %}
+
+        {% include "link.twig" with {
+            "link_href" : panel.url,
+            "link_modifier" : "text--align-center text--lg",
+            "link_text" : panel.link_text
+        } %}
+    </div><!-- /panel__back -->
+    <div class="panel__front text--align-center" style="background-image: url({{ panel.background | raw }});">
+        {% include "link.twig" with {
+            "link_href" : panel.url,
+            "link_modifier" : "text--lg",
+            "link_text" : panel.headline
+        } %}
+    </div><!-- /panel__front -->
+</div><!-- /panel -->

@@ -1,0 +1,34 @@
+{% if menuPrimary %}
+	<nav class="background--dark" id="mobileMenu" role="navigation">
+		<div class="content-wrapper">
+            {% include '_link-element.twig' with {
+                'link_href' : '/',
+                'link_modifier' : 'headline headline--home text--xxl',
+                'link_text' : 'Animal Clinic at Thorndale'
+            } %}
+
+            {% include 'button-mobileToggle.twig' with {
+                'button_modifier' : 'js-close'
+            } %}
+
+			<ul class="menu menu--mobile text--bold">
+				{% for item in menuPrimary %}
+					<li class="list__item {{ item.classes | join(' ') }}">
+						{% include "_link-element.twig" with {
+							'link_href': item.link,
+							'link_text': item.title,
+						} %}
+					</li>
+				{% endfor %}
+			</ul>
+
+            {% include 'block-contact-us.twig' with {
+                'email' : true,
+                'directions' : true,
+                'headline' : 'Need an appointment? Contact us!',
+                'hours' : true,
+                'phone' : true
+            } %}
+		</div><!-- /content-wrapper -->
+	</nav><!-- /menu--primary -->
+{% endif %}

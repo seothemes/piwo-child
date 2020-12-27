@@ -1,0 +1,21 @@
+{% if input_placeholder %}
+	{% set input_placeholder = 'placeholder="' ~ input_placeholder ~ '"' %}
+{% endif %}
+
+{% if input_value %}
+	{% set input_value = 'value="' ~ input_value ~ '"' %}
+{% endif %}
+
+<div class="element">
+	<div class="input-wrapper">
+		{% if label_text %}
+			{% include 'label.twig' with {
+				'label_for' : input_name,
+				'label_modifier' : label_modifier,
+				'label_text' : label_text
+			} %}
+		{% endif %}
+
+		<input class="input--{{ input_type }} {{ input_modifier }}" id="{{ input_name }}" name="{{ input_name }}" {{ input_placeholder |raw }} type="{{ input_type }}" {{ input_value | raw }} />
+	</div>
+</div>

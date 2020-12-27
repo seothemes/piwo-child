@@ -1,0 +1,22 @@
+<div class="colorPalettes">
+	{% for key,colors in colorPalette %}
+	<div class="colorPalette colorPalette--stack">
+		<h3 class="headline">{{ key }}</h3>
+
+		{% for color in colors %}
+			<div class="color color--{{ color.type }}" style="background-color:{{ color.hex }};">
+				<div class="grid-wrapper--10">
+					<div class="col col--xs-1of2">
+						<div class="color__name text--bold">{{ color.name }}</div>
+					</div>
+					<div class="col col--xs-1of2">
+						<div class="color__values">
+							<div class="color__hex">{{ color.hex }}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	{% endfor %}
+</div>

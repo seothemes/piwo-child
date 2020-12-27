@@ -1,0 +1,11 @@
+<div class="element">
+	<label class="{{ input_type }}-wrapper {{ label_modifier }}" for="{{ input_id }}">
+		<span>{{ label_text }}</span>
+		
+		{% include 'input-group.twig' with {
+			'input_id' : input_id,
+			'input_name' : input_name,
+			'input_type' : input_type
+		} %}
+	</label>
+</div>

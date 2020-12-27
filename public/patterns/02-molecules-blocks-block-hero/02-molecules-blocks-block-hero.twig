@@ -1,0 +1,16 @@
+<div class="block hero {{ hero_modifier ? hero_modifier : '' }}">
+	<div class="hero__content">
+		<div class="content-wrapper">
+			{% include "_headline.twig" with {
+				"headline_modifier" : "hero__headline",
+				"headline_text" : "Dynamic headline",
+				"headline_type" : "h1"
+			} %}
+			{% include "_headline.twig" with {
+				"headline_modifier" : "hero__sub-headline",
+				"headline_text" : "Sub-headline",
+				"headline_type" : "h2"
+			} %}
+		</div><!-- /content-wrapper -->
+	</div><!-- /hero__content -->
+</div><!-- /hero -->

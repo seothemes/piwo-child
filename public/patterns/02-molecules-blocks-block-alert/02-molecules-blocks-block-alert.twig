@@ -1,0 +1,15 @@
+<div class="alert background--light">
+    {% include '_headline-element.twig' with {
+        'headline_modifier' : 'text--xl',
+        'headline_text' : alert_headline,
+        'headline_type' : 'h3'
+    } %}
+
+    {% include 'text-paragraph.twig' with {
+        'paragraph_text' : alert_content
+    } %}
+
+    {% include 'button.twig' with {
+        'button_text' : alert_button_text
+    } %}
+</div><!-- /alert -->

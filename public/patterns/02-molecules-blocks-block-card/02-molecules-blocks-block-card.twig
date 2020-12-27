@@ -1,0 +1,30 @@
+<div class="card {{ card.card_modifier ? card.card_modifier : '' }}">
+	<div class="card__header style="{{ card.thumbnail_url ? 'background-image: url(' ~ card.thumbnail_url ~ ');' : "" }}">
+	</div><!-- /card__header -->
+
+	<div class="card__body">
+		{% set headlineLink %}
+			{% include "link.twig" with {
+				'href' : card.url,
+				'text' : card.headline_text,
+			} %}
+		{% endset %}
+
+		{% include "_headline-h4.twig" with {
+			'headline_modifier': 'card__headline',
+			'text_h4' : headlineLink,
+		} %}
+		{{ card.content | truncate( 55, true ) }}
+	</div><!-- /card__body -->
+
+	<div class="card__footer">
+		{% set footerLinkText %}
+			{{ 'Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i>' | raw }}
+		{% endset %}
+
+		{% include "link.twig" with {
+			'href' : card.url,
+			'text' : footerLinkText,
+		} %}
+	</div><!-- card__footer -->
+</div>

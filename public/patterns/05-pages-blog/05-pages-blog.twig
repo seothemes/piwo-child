@@ -1,0 +1,9 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<section class="block">
+		{% for post in posts %}
+			<div>{{ post.title }}</div>
+		{% endfor %}
+	</section>
+{% endblock %}

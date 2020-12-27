@@ -1,0 +1,14 @@
+{% if menuPrimary %}
+	<nav class="background--dark" id="stickyMenu" role="navigation">
+        <ul class="menu menu--primary {{ menu_modifier }}">
+            {% for item in menuPrimary %}
+                <li class="list__item {{ item.classes | join(' ') }}">
+                    {% include "_link-element.twig" with {
+                        'link_href': item.link,
+                        'link_text': item.title,
+                    } %}
+                </li>
+            {% endfor %}
+        </ul>
+	</nav><!-- /menu--primary -->
+{% endif %}

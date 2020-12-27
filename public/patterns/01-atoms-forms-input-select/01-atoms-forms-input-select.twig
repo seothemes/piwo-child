@@ -1,0 +1,9 @@
+<div class="element">
+	<div class="select-wrapper">
+		<select class="input--select {{ input_modifier }}" id="{{ name }}" name="{{ name }}">
+			{% for option in selectOptions %}
+				<option value="{{ option.value }}" {{ option.selected ? 'selected="selected"' : '' }}>{{ option.text }}</option>
+			{% endfor %}
+		</select>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+{% for key,font in fonts %}
+	<div class="font font--{{ key }}">
+		<p>{{ font.font_stack }}</p>
+		<p class="text--bold">{{ font.font_stack }}</p>
+		<p class="text--italic">{{ font.font_stack }}</p>
+		<p class="text--light">{{ font.font_stack }}</p>
+	</div>
+{% endfor %}

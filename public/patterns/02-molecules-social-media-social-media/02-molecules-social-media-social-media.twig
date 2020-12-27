@@ -1,0 +1,11 @@
+<ul class="list list--inline list--removeBaseStyles socialMedia {{ socialMedia_modifier }}">
+	{% for icon in socialMedia_icons %}
+		<li class="list__item">
+			<div class="element">
+				<a class="link link--{{ icon.fa }}" href="{{ icon.url }}" target="_blank">
+					<i class="fa fa-{{ icon.fa }}" aria-hidden="true"></i>
+				</a>
+			</div>
+		</li>
+	{% endfor %}
+</ul>

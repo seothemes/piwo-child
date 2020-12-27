@@ -1,0 +1,43 @@
+<header class="header background--light" id="masthead" role="banner">
+	<div class="header__top">
+		<div class="content-wrapper">
+			<div class="block">
+				<div class="grid-wrapper--0 grid-wrapper--align-items-center">
+					<div class="col--2of3 col--xs-1of1 col--sm-2of5">
+						{% include '_link-element.twig' with {
+							'link_href' : '/',
+							'link_modifier' : 'headline headline--home text--xxl',
+							'link_text' : 'Animal Clinic at Thorndale'
+						} %}
+					</div> <!-- /col--1of2 -->
+
+					<div class="col--1of3 col--xs-1of1 col--sm-3of5">
+						{% include "button-mobileToggle.twig" %}
+
+						{% include 'block-contact-us.twig' with {
+							'contact_us_modifier' : 'contact-us--header',
+							'email' : true,
+							'directions' : true,
+							'headline' : 'Need an appointment? Contact us!',
+							'hours' : true,
+							'list_modifier' : 'list--inline ',
+							'phone' : true
+						} %}
+					</div> <!-- /col--1of2 -->
+				</div><!-- /grid-wrapper--0 -->
+			</div>
+		</div><!-- /content-wrapper -->
+	</div><!-- /header__top -->
+
+	{% block hero %}
+		{% include 'block-hero.twig' with {
+			'hero_modifier' : 'background--dark'
+		} %}
+	{% endblock %}
+
+	<div class="header__bottom">
+        {% include 'menu-primary.twig' with {
+            'menu_modifier' : 'flex--row-nowrap flex--align-items-center flex--justify-content-center menu--inline'
+        } %}
+	</div><!-- /header__bottom -->
+</header>

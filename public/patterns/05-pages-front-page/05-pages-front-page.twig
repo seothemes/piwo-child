@@ -1,0 +1,107 @@
+{% extends "base.twig" %}
+
+{% block header %}
+	{% embed 'section-header.twig' %}
+		{% block hero %}
+			{% include 'block-hero-front-page.twig' with {
+				'hero_modifier' : 'background--dark'
+			} %}
+		{% endblock %}
+	{% endembed %}
+{% endblock %}
+
+{% block beforeContent %}
+    <div class="content-wrapper">
+        <div class="block">
+            {% include 'block-alert.twig' with {
+                "alert_button_text" : "Learn more",
+                "alert_content" : "The last ever dolphin message was misinterpreted as a surprisingly sophisticated attempt to do a double-backwards-somersault through a hoop whilst whistling the 'Star Spangled Banner', but in fact the message was this: So long and thanks for all the fish.",
+                "alert_headline" : "Alert title"
+            } %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="content-wrapper">
+        <div class="grid-wrapper--0">
+            <div class="col col--sm-2of3 col--lg-3of4">
+                <div class="block">
+                    {% include '_headline-element.twig' with {
+                        'headline_modifier' : 'text--xxl',
+                        'headline_text' : 'Our Mission',
+                        'headline_type' : 'h1'
+                    } %}
+
+                    {% include 'text-paragraph.twig' with {
+                        'paragraph_text' : 'We are a full service veterinary hospital which offers high quality diagnostic, surgical, and medical procedures. Our mission is to provide the best possible medical and surgical care available to all our patients, throughout their lives, in a professional and caring environment. Beyond the routine and advanced care we provide in our own hospital, we also offer referrals  to appropriate area  veterinary specialists when deemed in your pet’s best interests.  Our highly trained staff participate in continuing education year round so we can offer the most up to date and optimal diagnostic and treatment plans for your pet.'
+                    } %}
+                </div><!--/block -->
+            </div>
+            <div class="col col--sm-1of3 col--lg-1of4">
+                <div class="sidebar--pet-care-information">
+                    <div class="block">
+                        {% include '_headline-element.twig' with {
+                            'headline_modifier' : 'text--xl',
+                            'headline_text' : 'Pet Care Information',
+                            'headline_type' : 'h3'
+                        } %}
+
+                        {% include 'text-paragraph.twig' with {
+                            'paragraph_text' : 'Our website has hundred of pages of information and useful links designed to keep you well informed! Click below to get started.'
+                        } %}
+
+                        {% include '_link-element.twig' with {
+                            'link_modifier' : 'btn',
+                            'link_text' : 'General Pet Info'
+                        } %}
+
+                        {% include '_link-element.twig' with {
+                            'link_modifier' : 'btn',
+                            'link_text' : 'Info About Cats'
+                        } %}
+
+                        {% include '_link-element.twig' with {
+                            'link_modifier' : 'btn',
+                            'link_text' : 'Info About Dogs'
+                        } %}
+
+                        {% include 'form-search.twig' %}
+                    </div><!-- /block -->
+                </div><!-- /pet-care-information -->
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block afterContent %}
+    <div class="block--full-row">
+        {% include 'section-contact-us.twig' %}
+    </div>
+
+    <div class="block">
+        {% include '_headline-element.twig' with {
+            'headline_modifier' : 'text--align-center text--xxl',
+            'headline_text' : 'Recent Posts',
+            'headline_type' : 'h2'
+        } %}
+    </div>
+
+        <div class="carousel carousel--home">
+            <div class="carousel-cell">
+                <div class="block">Slide 1</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">Slide 2</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">Slide 3</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">Slide 4</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="block">Slide 5</div>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+<div class="element">
+	<label class="{{ input_type }}-wrapper {{ label_modifier }}" for="{{ input_id }}">		
+		<input class="input--{{ input_type }} {{ input_modifier }}" id="{{ input_id }}" name="{{ input_name }}{{ input_type | lower == 'checkbox' ? '[]' : '' }}" type="{{ input_type }}" value="{{ input_value }}" />
+
+		{{ label_text }}
+	</label>
+</div>

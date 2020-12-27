@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="36px" viewBox="0 0 29 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>tablet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="current-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="digital-channels" transform="translate(-581.000000, -517.000000)" fill="#FFFFFF">
+            <g id="Group-5" transform="translate(525.000000, 464.000000)">
+                <path d="M58,53 L83,53 C84.1045695,53 85,53.8954305 85,55 L85,86.525 C85,87.6295695 84.1045695,88.525 83,88.525 L58,88.525 C56.8954305,88.525 56,87.6295695 56,86.525 L56,55 C56,53.8954305 56.8954305,53 58,53 Z M59,56 L59,83.45 L82,83.45 L82,56 L59,56 Z M70.475,83.5125 C69.66038,83.5125 69,84.17288 69,84.9875 C69,85.80212 69.66038,86.4625 70.475,86.4625 C71.28962,86.4625 71.95,85.80212 71.95,84.9875 C71.95,84.17288 71.28962,83.5125 70.475,83.5125 Z" id="tablet"></path>
+            </g>
+        </g>
+    </g>
+</svg>

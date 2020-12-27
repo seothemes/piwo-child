@@ -1,0 +1,34 @@
+<div class="contact-us">
+    {% if headline_text %}
+        {% include "_headline-element.twig" with {
+            'headline_modifier' : 'text--lg',
+            'headline_text' : headline_text,
+            'headline_type' : 'h3'
+        } %}
+    {% endif %}
+
+    {% include '_link-element.twig' with {
+        'link_href' : 'tel:6108734091',
+        'link_modifier' : 'link--phone',
+        'link_text' : '610-873-4091'
+    } %}
+
+    {% include '_link-element.twig' with {
+        'link_href' : 'mailto:animalclinicatthorndale@verizon.net',
+        'link_modifier' : 'link--email',
+        'link_text' : 'Email us'
+    } %}
+
+    {% include '_link-element.twig' with {
+        'link_href' : 'https://www.google.com/maps/place/Animal+Clinic+at+Thorndale,+p.c./@40.0056514,-75.7478063,17z/data=!3m1!4b1!4m5!3m4!1s0x89c65f3a54250b8f:0x80d74fcff4f2ec50!8m2!3d40.0056473!4d-75.7456176',
+        'link_modifier' : 'link--directions',
+        'link_target' : 'blank',
+        'link_text' : 'Get Directions'
+    } %}
+
+    {% include '_link-element.twig' with {
+        'link_href' : '/contact-us',
+        'link_modifier' : 'link--hours',
+        'link_text' : 'Today\'s Hours ' ~ todaysHours
+    } %}
+</div><!-- /contact-us -->

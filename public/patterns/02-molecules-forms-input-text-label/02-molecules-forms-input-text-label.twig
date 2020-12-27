@@ -1,0 +1,15 @@
+<div class="element">
+	{% include "label.twig" with {
+		'label_for': input_name,
+		'label_modifier' : label_modifier,
+		'label_text': label_text
+	} %}
+
+	{% include "input-text.twig" with {
+		'input_modifier' : input_modifier,
+		'input_name': input_name,
+		'input_placeholder': input_placeholder,
+		'input_type' : input_type,
+		'input_value': input_value
+	} %}
+</div>

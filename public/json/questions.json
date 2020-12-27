@@ -1,0 +1,38 @@
+{
+	"capabilities": {
+		"Marketing": {
+			"text": "Select each digital channel your organization uses for <b>marketing, promotion, or brand</b> awareness.",
+			"title": "Marketing"
+		},
+		"Product - Service Info": {
+			"text": "Select each digital channel your organization uses to provide <b>product and service</b> information to current customers.",
+			"title": "Product - Service Info"
+		},
+		"eCommerce": {
+			"text": "Select each digital channel your organization uses to transact with customer by providing <b>eCommerce</b> capabilities.",
+			"title": "eCommerce"
+		},
+		"Support": {
+			"text": "Select each digital channel your organization uses to provide <b>help and support</b> to your customers.",
+			"title": "Support"
+		}
+	},
+	"design" : {
+		"Appeal": {
+			"text": "Indicate each channel that has a <b>modern</b> and <b>appealing</b> interface design that makes an emotional connection with the customer through colors, graphics, and phrasing.",
+			"title": "Appeal"
+		},
+		"Task Orientation": {
+			"text": "Indicate each channel that has a <b>simple, task-oriented, and easy</b> to use interface design. The most common use cases are prioritized in the interface.",
+			"title": "Task Orientation"
+		},
+		"Consistency": {
+			"text": "Indicate each channel where the interface is <b>consistent and familiar</b> when compared with all other digital channels.",
+			"title": "Consistency"
+		},
+		"Personalized": {
+			"text": "Indicate each channel where the interface supports a high degree of <b>personalization</b> for different contexts and user personas.",
+			"title": "Personalized"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+<{{ list_type }} class="list {{ list_modifier }}">
+	{% for item in listItems %}
+		<li class="list__item">
+			<div class="element">
+			    {{ item.content | raw }}
+			</div>
+		</li>
+	{% endfor %}
+</{{ list_type }}>

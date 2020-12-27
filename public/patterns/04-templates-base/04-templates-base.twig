@@ -1,0 +1,66 @@
+<!doctype>
+<html>
+	<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" {{site.language_attributes}}> <![endif]-->
+	<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" {{site.language_attributes}}> <![endif]-->
+	<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" {{site.language_attributes}}> <![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
+
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <title>   
+	        {% if wp_title %}
+	            {{ wp_title }} - {{ site.name }}
+	        {% else %}
+	            {{ site.name }}
+	        {% endif %}
+	    </title>
+
+	    <meta name="description" content="{{site.description}}">
+	    
+	    <link rel="pingback" href="{{site.pingback_url}}" />
+
+		{% block head %}
+		{% endblock %}
+
+		{{ wp_head() }}
+	</head>
+
+	<body class="{{body_class}}" data-template="base.twig">
+		{% block header %}
+			{% include 'section-header.twig' %}
+		{% endblock %}
+
+		<section id="content" role="main">
+			{% block beforeContent %}
+			{% endblock %}
+
+			{% block content %}
+				<div class="col col--sm-1of3">
+					{% include 'form-contact-us.twig' %}
+				</div>
+
+				<div class="col col--sm-2of3">
+					<div class="block">
+						{% include 'text-paragraph.twig' with {
+							'paragraph_text' : excerpt.long
+						} %}
+					</div>
+				</div>
+			{% endblock %}
+
+			{% block afterContent %}
+			{% endblock %}
+		</section>
+
+		{% block footer %}
+			{% include 'section-footer-simple.twig' %}
+		{% endblock %}
+
+		{% include 'menu-mobile.twig' %}
+
+		{{ wp_footer() }}
+	</body>
+</html>

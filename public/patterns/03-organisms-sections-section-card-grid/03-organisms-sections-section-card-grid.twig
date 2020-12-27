@@ -1,0 +1,26 @@
+<div class="content-wrapper">
+	<div class="grid-wrapper--0">
+		<div class="col">
+			{% if headline %}
+				{% include "_headline-h3.twig" with {
+					'headline_modifier' : 'text--center',
+					'text' : headline_text
+				} %}
+			{% endif %}
+
+			{% if cards %}
+				<div class="cards">
+					<div class="grid-wrapper--10">
+						{% for card in cards %}
+							<div class="col col--xs-1of2 col--sm-1of3 col--md-1of4">
+								{% include "block-card.twig" with {
+									'card' : card
+								} %}
+							</div><!-- col -->
+						{% endfor %}
+					</div><!-- /grid-wrappper--10 -->
+				</div><!--/cards-->
+			{% endif %}
+		</div><!-- /col -->
+	</div><!-- /grid-wrapper--0 -->
+</div><!-- /content-wrapper -->

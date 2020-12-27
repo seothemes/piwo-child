@@ -1,0 +1,80 @@
+.piwo-fullscreen-links { display: flex; align-content: stretch; width: 100%; }
+.piwo-fullscreen-links-list { list-style: none; margin: 0; padding: 0; position: relative; z-index: 2; counter-reset: piwo-links; padding: 30px 0;
+	li { padding: 20px 120px 20px 0; position: relative; line-height: 1em; margin: 0;
+		.title { display: block; position: relative; transition: transform .3s, opacity .3s; transform-origin: left; opacity: .7;
+			@include breakpoint(medium down) { 
+				&:after { display: none; }
+			}
+			@include breakpoint(large only) { 
+				&:after { left: -30px; }
+			}
+		}
+		.subtitle { display: block; text-transform: uppercase; font-weight: bold !important; opacity: 0; transition: opacity 0.3s, transform 0.3s; transform: translateY(30px); display: none; 
+			@include breakpoint(medium down) { opacity: 0.4; transform: translateY(0); }
+		}
+		&.piwo-active { 
+			.title { transform: scale(1.2); opacity: 1; }
+		}
+		&:hover {
+			.title:after { opacity: .1; }
+			.subtitle { opacity: 0.4; transform: translateY(0); }
+		}
+		@include breakpoint(medium down) { margin: 15px 0 15px 0 !important; }
+	}
+	.h1 .subtitle { font-size: 0.28em; }
+	.h2 .subtitle { font-size: 0.32em; }
+	.h3 .subtitle { font-size: 0.38em; }
+	.h4 .subtitle { font-size: 0.42em; }
+	.h5 .subtitle { font-size: 0.5em; }
+	@include breakpoint(medium down) { flex-direction: column;
+		.h1 .subtitle { font-size: 0.5em; }
+		.h2 .subtitle { font-size: 0.5em; }
+		.h3 .subtitle { font-size: 0.7em; }
+		.h4 .subtitle { font-size: 0.8em; }
+		.h5 .subtitle { font-size: 0.8em; }
+	}
+}
+
+.piwo-fullscreen-bg-titles { pointer-events: none; position: fixed; top: 50%; left: 0;
+	li { position: absolute; top: 0; left: 0; white-space: nowrap; opacity: 0; transition: opacity .3s; width: 100vw;
+		h1 { margin: 0; font-size: calc(190px + 2.5 * ((100vw - 600px) / 42.25); transform: translateY(-50%); }
+		&.piwo-active { opacity: .05; }
+	}
+}
+
+.piwo-fullscreen-links-images { pointer-events: none; position: fixed; z-index: 1; top:0; left: 0; right: 0; bottom: 0; padding: 60px; /* display: flex; */
+	ul { list-style: none; margin: 0; position: absolute; z-index: 1; top:0; left: 0; right: 0; bottom: 0; padding: 120px; display: flex; justify-items: center; text-align: center; }
+	li { display: flex; position: absolute; left: 60px; top: 60px; right: 60px; bottom: 60px; justify-content: center;
+		img { transition: transform 0.5s; transform: translate3d(0,0,0) scale(1.2); width: auto; height: 100%; opacity: 1; max-width: none; }
+		div { position: relative; opacity: 0; transition: opacity 0.5s, transform 0.5s; transform: translate3d(0,0,0) scale(0.8); overflow: hidden; height: 100%; display: flex; justify-content: center; }
+		&.piwo-active div { opacity: 1; transform: translate3d(0,0,0) scale(1); }
+		&.piwo-active img { transform: translate3d(0,0,0) scale(1); }
+	}
+	@include breakpoint(small only) { padding: 0;
+		ul { padding: 0; 
+			li { top: 0; right: 0; bottom: 0; left: 0; margin: 0 -30px; } 
+		}
+	}
+}
+
+.piwo-fullscreen-links-inner { display: flex; width: 100%; align-content: center; align-items: center; }
+@include breakpoint(large) {	
+	.piwo-fullscreen-links-center { text-align: center; 
+		li { padding: 20px 60px 20px 60px; }
+		.piwo-fullscreen-links-list { justify-content: center; 
+			li .title { transform-origin: center; }
+		}
+		.piwo-fullscreen-links-inner { justify-content: center; }
+	}
+
+	.piwo-fullscreen-links-right { text-align: right;  
+		li { padding: 20px 0px 20px 120px; }
+		.piwo-fullscreen-links-list { justify-content: flex-end; 
+			li .title { transform-origin: right; }
+		}
+		.piwo-fullscreen-links-inner { justify-content: flex-end; }
+		.piwo-fullscreen-bg-titles { text-align: left; 
+			li { padding: 0; }
+		}
+	}
+}
