@@ -13,16 +13,16 @@
 <?php get_header();
 
 if ( class_exists ( 'acf' ) ) {
-    $anexient_logo  = get_field ( 'anexient_adv_temp_anexient_logo' );
-    $main_title     = get_field ( 'anexient_adv_temp_main_title' );
-    $main_desc      = get_field ( 'anexient_adv_temp_desc' );
-    $main_cta_label = get_field ( 'anexient_adv_temp_cta_label' );
-    $main_image     = get_field ( 'anexient_adv_temp_main_img' );
+    $anexinet_logo  = get_field ( 'anexinet_adv_temp_anexinet_logo' );
+    $main_title     = get_field ( 'anexinet_adv_temp_main_title' );
+    $main_desc      = get_field ( 'anexinet_adv_temp_desc' );
+    $main_cta_label = get_field ( 'anexinet_adv_temp_cta_label' );
+    $main_image     = get_field ( 'anexinet_adv_temp_main_img' );
 
-    $route_outcomes_form_sc = get_field ( 'anexient_adv_temp_route_outcomes_main_form' );
-    $route_outcomes_forms   = get_field ( 'anexient_adv_temp_route_outcomes' );
-    $questions_sec_img      = get_field ( 'anexient_adv_temp_path_questions_sec_img' );
-    $questions              = get_field ( 'anexient_adv_temp_path_questions' );
+    $route_outcomes_form_sc = get_field ( 'anexinet_adv_temp_route_outcomes_main_form' );
+    $route_outcomes_forms   = get_field ( 'anexinet_adv_temp_route_outcomes' );
+    $questions_sec_img      = get_field ( 'anexinet_adv_temp_path_questions_sec_img' );
+    $questions              = get_field ( 'anexinet_adv_temp_path_questions' );
 }
 ?>
 <style>
@@ -35,9 +35,9 @@ if ( class_exists ( 'acf' ) ) {
 
 <div class="cloud-migration-form-wrap" style="background-image: url(https://www.anexinet.com/wp-content/uploads/2019/07/main-bg-img.jpg);">
     <div class="section1">
-        <?php if ( !empty ( $anexient_logo ) ) { ?>
+        <?php if ( !empty ( $anexinet_logo ) ) { ?>
                 <div class="logo-wrap">
-                    <a href="<?php echo site_url(); ?>"><img src="<?php echo $anexient_logo['url']; ?>"></a>
+                    <a href="<?php echo site_url(); ?>"><img src="<?php echo $anexinet_logo['url']; ?>"></a>
                 </div>
         <?php } ?>
         <div class="content-wrap">
@@ -93,7 +93,7 @@ if ( class_exists ( 'acf' ) ) {
                                                     <a class="btn option_result route_to_outcome white-btn" outcome="<?php echo $opt_result_outcome; ?>" href="#outcome_number_<?php echo $opt_result_outcome; ?>"><?php echo $opt_title; ?></a>
                                                 <?php
                                                 }
-                                            } 
+                                            }
                                         ?>
                                     </div>
                             <?php } ?>
@@ -138,8 +138,8 @@ if ( class_exists ( 'acf' ) ) {
             </div>
             <?php
         }
-    } 
-    
+    }
+
     if ( !empty ( $route_outcomes_form_sc ) ) { ?>
         <div class="outcome_form_display" style="display: none;">
             <?php echo do_shortcode($route_outcomes_form_sc); ?>
