@@ -10,7 +10,7 @@
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,26 +38,26 @@ while ( have_posts() ) : the_post(); ?>
             $intro_bg = get_field('piwo_page_intro_bg','option');
             $intro_color = get_field('piwo_page_intro_color', 'option');
         }
-    
+
         if(get_field('piwo_intro_section') == 'enabled') {
             $intro_bg = get_field('piwo_intro_bg');
             $intro_color = get_field('piwo_intro_text_color');
         }
-    
+
         if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
             echo piwo_intro_section($intro_bg,$intro_color);
         }
-    
+
     } else {
         echo piwo_intro_section();
-    
+
   }
   ?>
   <style>
 
 .post-intro-wrapper h1.post-title {
 font-size: 40px !important;
-}	  
+}
 .kickstartwhite {
     line-height: 22px !important;
     margin-top: 250% !important;
@@ -67,7 +67,7 @@ font-size: 40px !important;
     color: inherit;
     color: #FFB852 !important;
 }
-	  
+
 	  .fa, .fas {
     font-size: 12px;
     font-weight: 900;
@@ -76,11 +76,11 @@ font-size: 40px !important;
 	  .yellowreadmore {
 		  color: #FFB852 !important;
 	  }
-	 
+
 	  .yellowreadmore:hover {
 		  color: #187bcd !important;
 	  }
-	  
+
 .svg-inline--fa {
     display: inline-block;
     font-size: inherit;
@@ -90,7 +90,7 @@ font-size: 40px !important;
     width: 1em;
 		  height: 1em;
 }
-	  
+
       .gray-p p{
           color:#6e6e68;
       }
@@ -103,12 +103,12 @@ font-size: 40px !important;
 		line-height: 22px;
 		text-align: center;
       }
-	  
+
 	  .missionbox {
 		  width: 90%;
 		  margin: 0 auto;
 	  }
-	  
+
 	  .bluebtn {
     background-color: #187bcd;
     width: 150px;
@@ -121,7 +121,7 @@ font-size: 40px !important;
 	cursor: pointer;
 	font-family: "Montserrat", sans-serif;
 }
-	  
+
 	  .bluebtn:hover {
 background-color:  #0F4C83;
 		  color: white !important;
@@ -139,7 +139,7 @@ background-color:  #0F4C83;
   .img-text-bottom-related img{
     margin-bottom:20px;
   }
-	  
+
 	.img-text-bottom-related-1{
     padding: 20px;
 	  width: 75%;
@@ -248,8 +248,8 @@ background-color:  #0F4C83;
     .white{
       color:#fff;
     }
-  
-    
+
+
     .blacky{
       color:#3d3d3b !important;
     }
@@ -285,7 +285,7 @@ background-color:  #0F4C83;
     line-height: 1.37;
     letter-spacing: normal;
     margin-top:20px;
-    
+
 }
 
  #platform-analytics-services .p {
@@ -459,10 +459,10 @@ background-color:  #0F4C83;
         margin: 0 auto;
     }
 }
-	  
-  
-	
-	  
+
+
+
+
 
 #platform-analytics-services .well-architected-framework .bg-rectangle .title, #platform-analytics-services .devops .bg-rectangle .title, #platform-analytics-services .consumption-based-it .bg-rectangle .title {
     font-size: 11px;
@@ -498,8 +498,8 @@ background-color:  #0F4C83;
 html {
     scroll-behavior: smooth;
 }
-	  
-	 
+
+
 
 #WS-ScroLi {
     position: absolute;
@@ -583,7 +583,7 @@ html {
 {
     margin-top: -5px;
 }
-	
+
 #WS-ScroLi .item-7 .line, #WS-ScroLi .item-7 .line-animation {
     display: none !important;
 }
@@ -842,7 +842,7 @@ html {
     margin-bottom: 20px;
     margin-top: 30px;
     margin-bottom:22px;
-} 
+}
  .title-first-a span{
     color:white;
 }
@@ -957,7 +957,7 @@ html {
     height: 100%;
 }
 
-@media (max-width: 1450px) {	  
+@media (max-width: 1450px) {
 	.img-text-bottom-related{
     padding: 20px;
 	  width: 100%;
@@ -969,7 +969,7 @@ html {
     background-color: white;
   }
 	.kickstartwhite {
-		   margin-top: 300% !important; 
+		   margin-top: 300% !important;
 	  }
 	  }
 @media (min-width: 768px) {
@@ -991,12 +991,12 @@ html {
         src="https://www.anexinet.com/wp-content/uploads/2020/03/back-to-top.png" alt="Back to top" /></button>
 <!-- / back to top -->
 
- 
+
 
 <?php echo the_content(); ?>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 
@@ -1146,7 +1146,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 </script>

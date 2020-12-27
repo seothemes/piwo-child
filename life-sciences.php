@@ -10,7 +10,7 @@
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,22 +38,22 @@ while ( have_posts() ) : the_post(); ?>
             $intro_bg = get_field('piwo_page_intro_bg','option');
             $intro_color = get_field('piwo_page_intro_color', 'option');
         }
-    
+
         if(get_field('piwo_intro_section') == 'enabled') {
             $intro_bg = get_field('piwo_intro_bg');
             $intro_color = get_field('piwo_intro_text_color');
         }
-    
+
         if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
             echo piwo_intro_section($intro_bg,$intro_color);
         }
-    
+
     } else {
         echo piwo_intro_section();
-    
+
   }
   ?>
-  
+
   <style>
   body a:focus, body a:hover {
     color: inherit;
@@ -61,7 +61,7 @@ while ( have_posts() ) : the_post(); ?>
 }
 #platform-analytics-services .accordion:hover{
     background-color: #0F4C83;
-} 
+}
 	  .fa, .fas {
     font-size: 12px;
     font-weight: 900;
@@ -107,7 +107,7 @@ background-color:  #0F4C83;
         font-size: 14px;
         max-width: 236px;
       }
-      
+
       .col-md-4{
         padding-left:0;
       }
@@ -227,8 +227,8 @@ background-color:  #0F4C83;
     .white{
       color:#fff;
     }
-  
-    
+
+
     .blacky{
       color:#3d3d3b !important;
     }
@@ -245,7 +245,7 @@ background-color:  #0F4C83;
     max-width: 750px !important;
     margin: 0 auto 0 0 !important;
 }
- 
+
     #platform-analytics-services {
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -263,7 +263,7 @@ background-color:  #0F4C83;
     letter-spacing: normal;
     margin-top:20px;
 		max-width: 500px;
-    
+
 }
 
  #platform-analytics-services .p {
@@ -468,7 +468,7 @@ html {
     z-index: 9;
     left: 14% !important;
 }
-	  
+
 	  @media (min-width: 768px) {
 .col-md-10 {
     -ms-flex: 0 0 83.333333%;
@@ -730,7 +730,7 @@ html {
     font-size:18px;
     font-weight:600;
 }
-	  
+
 	  .social-listening .row {
     margin-right: -1.25rem;
     margin-left: .15em;
@@ -824,7 +824,7 @@ html {
     margin-bottom: 20px;
     margin-top: 30px;
     margin-bottom:22px;
-} 
+}
  .title-first-a span{
     color:white;
 }
@@ -854,7 +854,7 @@ html {
 #platform-analytics-services  .data-app-security .bg-rectangle{
     background-image: url('/wp-content/uploads/2020/07/group-3-10.jpg');
     background-repeat: no-repeat;
-  
+
     padding: 10px 20px;
 }
 
@@ -949,12 +949,12 @@ html {
         src="https://www.anexinet.com/wp-content/uploads/2020/03/back-to-top.png" alt="Back to top" /></button>
 <!-- / back to top -->
 
- 
+
 
 <?php echo the_content(); ?>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 
@@ -1097,7 +1097,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 </script>

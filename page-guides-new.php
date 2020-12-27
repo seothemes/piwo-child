@@ -14,7 +14,7 @@
 <?php get_header(); ?>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" type="text/javascript"></script>
 <script type="text/javascript">
- 
+
 
 </script>
 <?php
@@ -46,22 +46,22 @@ while ( have_posts() ) : the_post(); ?>
 			$intro_bg = get_field('piwo_page_intro_bg','option');
 			$intro_color = get_field('piwo_page_intro_color', 'option');
 		}
-		
+
 		if(get_field('piwo_intro_section') == 'enabled') {
 			$intro_bg = get_field('piwo_intro_bg');
 			$intro_color = get_field('piwo_intro_text_color');
 		}
-	
+
 		if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
 			echo piwo_intro_section($intro_bg,$intro_color);
 		}
-		
+
 	} else {
 		echo piwo_intro_section();
-		
+
 	}
   ?>
-  
+
   <style>
   .trying_solve-sec{
     display:none;
@@ -70,9 +70,9 @@ while ( have_posts() ) : the_post(); ?>
   max-height: 104px !important;
 }
 .kickstart-section .second-cont .filter-button-group a button{
-  border: inherit !important; 
-    height: inherit !important; 
-     margin-top: inherit !important; 
+  border: inherit !important;
+    height: inherit !important;
+     margin-top: inherit !important;
     font-weight: inherit !important;
      text-transform: inherit !important;
 }
@@ -87,7 +87,7 @@ while ( have_posts() ) : the_post(); ?>
 		<div class="<?php echo esc_attr($col_class);?> blog-content">
 			<?php
 			the_content();
-			
+
 			?>
 		</div>
 
@@ -98,7 +98,7 @@ while ( have_posts() ) : the_post(); ?>
   <section class="second-cont">
     <div class="container select-filter-box">
     <div class="filters filter-button-group">
-      
+
       <a class="active" data-filter="*">
         <div>
          <button >View All</button>
@@ -131,7 +131,7 @@ while ( have_posts() ) : the_post(); ?>
               return ($a < $b) ? -1 : 1;
             }
 
-            usort($categories, 'comparacion');  
+            usort($categories, 'comparacion');
 
             if( !empty( $categories  ) ){
                 foreach( $categories as  $categorie  ){
@@ -143,7 +143,7 @@ while ( have_posts() ) : the_post(); ?>
                       <div>
                         <button ><?php echo $name; ?></button>
                         <span><?php echo $desc; ?></span>
-                      </div>  
+                      </div>
                     </a>
                     <?php
                 }
@@ -173,13 +173,13 @@ while ( have_posts() ) : the_post(); ?>
           $term_slug      = array();
           $term_slug_str  = '';
           $term_list      = wp_get_post_terms( get_the_ID() , 'kickstarts_tax_type', array("fields" => "all"));
-          foreach($term_list as $term_single) {             
+          foreach($term_list as $term_single) {
             array_push($term_slug, $term_single->slug );
           }
           if( !empty( $term_slug ) ){
               $term_slug_str = implode(' ', $term_slug );
           }
-          $get_started_cta = get_field('anexient_kickstart_xpost_get_started_cta');
+          $get_started_cta = get_field('anexinet_kickstart_xpost_get_started_cta');
           if ( empty( $get_started_cta['url'] ) ) {
               $get_started_cta['url'] = get_field("landing_page_url_ebook");
           }
@@ -196,7 +196,7 @@ while ( have_posts() ) : the_post(); ?>
           </div>
           <div class="info-cont">
             <!-- <div class="date-author-cont">
-            
+
               <div class="date-cont">
                 <p><?php the_date(); ?></p>
               </div>
@@ -230,18 +230,18 @@ while ( have_posts() ) : the_post(); ?>
 
 <!-- no posts found -->
         <?php endif; ?>
-        
+
         </div> <!-- row end-->
 
 
 
- 
+
 
   </div> <!-- Main container end -->
 </section> <!--section container end -->
 </div>    <!-- Main Section Cont end -->
 <!-- Section 3 End -->
-    
+
 	<?php if(!$full_pages == true) {
 		echo '</div>';
 	}
@@ -250,7 +250,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php endwhile; ?>
 
 <!-- Anexinet Main Form Begin -->
-<?php include('form.php'); ?> 
+<?php include('form.php'); ?>
 <!-- Anexinet Main Form End -->
 
 <?php
@@ -287,7 +287,7 @@ $child_options_array = array();
                         <span>--Select--</span>
                     </div>
                     <ul class="dropdown-menu">
-                        <?php foreach ( $kickstart_quiz_main_options as $main_opt_key => $main_opt_val ) { 
+                        <?php foreach ( $kickstart_quiz_main_options as $main_opt_key => $main_opt_val ) {
                                 $opt_title     = $main_opt_val[ 'option_title' ];
                                 $opt_has_child = $main_opt_val[ 'option_has_children' ];
                                 $result_type   = $main_opt_val[ 'url_type' ];
@@ -311,7 +311,7 @@ $child_options_array = array();
                                     <li url="<?php echo $opt_result; ?>"><?php echo $opt_title; ?></li>
                                     <?php
                                 }
-                            } 
+                            }
                         ?>
                     </ul>
                 </div>
@@ -344,8 +344,8 @@ $child_options_array = array();
                                         <?php
                                     }
                                 ?>
-                            </ul> 
-                        </div>  
+                            </ul>
+                        </div>
                     </div>
                     <?php
                 }

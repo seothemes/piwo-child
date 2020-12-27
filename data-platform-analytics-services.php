@@ -10,7 +10,7 @@
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,19 +38,19 @@ while ( have_posts() ) : the_post(); ?>
             $intro_bg = get_field('piwo_page_intro_bg','option');
             $intro_color = get_field('piwo_page_intro_color', 'option');
         }
-    
+
         if(get_field('piwo_intro_section') == 'enabled') {
             $intro_bg = get_field('piwo_intro_bg');
             $intro_color = get_field('piwo_intro_text_color');
         }
-    
+
         if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
             echo piwo_intro_section($intro_bg,$intro_color);
         }
-    
+
     } else {
         echo piwo_intro_section();
-    
+
   }
   ?>
 
@@ -779,7 +779,7 @@ body #description p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: 49%; 
+    width: 49%;
     height: 740px;
 }
 
@@ -1011,7 +1011,7 @@ padding-left: 16px; }
 
 
 @media only screen and (max-width: 1024px) {
-   
+
     #data_platform_and_analytics_services{
         min-height:900px;
     }
@@ -1034,7 +1034,7 @@ padding-left: 16px; }
     .container-managed-dos-caja4{
         height:610px;
     }
-   
+
     .parrafofix {
         left: 4vw;
     }
@@ -1089,7 +1089,7 @@ padding-left: 16px; }
     .font-14{
         font-size:14px !important;
     }
-   
+
 
     .container-cards-one {
         max-width: 823px;
@@ -1124,7 +1124,7 @@ padding-left: 16px; }
         margin-left: 3%;
         margin-right: 5%;
     }
-    
+
     .dereparrafo-image {
         margin-bottom: 15px;
         float: left;
@@ -1948,7 +1948,7 @@ padding-left: 16px; }
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 

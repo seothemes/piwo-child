@@ -38,25 +38,25 @@ while ( have_posts() ) : the_post(); ?>
 			$intro_bg = get_field('piwo_page_intro_bg','option');
 			$intro_color = get_field('piwo_page_intro_color', 'option');
 		}
-	
+
 		if(get_field('piwo_intro_section') == 'enabled') {
 			$intro_bg = get_field('piwo_intro_bg');
 			$intro_color = get_field('piwo_intro_text_color');
 		}
-	
+
 		if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
 			echo piwo_intro_section($intro_bg,$intro_color);
 		}
-	
+
 	} else {
 		echo piwo_intro_section();
-	
+
   }
   ?>
 
 
 <!--  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-  
+
 
 <!-- back to top -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.anexinet.com/wp-content/uploads/2020/03/back-to-top.png" alt="Back to top"/></button>
@@ -159,7 +159,7 @@ ul {
   margin: 20px;
 }
 ul li {
- 
+
   margin-bottom: 0px;
   margin-left: 20px;
   color: #6e6e68;
@@ -333,7 +333,7 @@ h3 {
 }
 #WS-ScroLi [class^="item"].current a {}
 body {
- 
+
 }
 body #header {
   height: 1000px;
@@ -373,7 +373,7 @@ body #description p {
   margin-top: -5px;
 }
 .item-4 .line, .item-4 .line-animation {
- display: none !important; 
+ display: none !important;
 }
 .icon-text {
 margin-top: -19px;
@@ -633,7 +633,7 @@ padding-top: 17px;
     padding-top: 26px;
   }
   .btn_read_bottom {
-  
+
     margin-left: 73%;
     margin-top: -35px;
   }
@@ -645,7 +645,7 @@ padding-top: 17px;
 
 
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 
   #digital_core {
     min-height: 1100px;
@@ -692,7 +692,7 @@ padding-left: 30px;
 
 
 
-@media only screen and (max-width: 960px) { 
+@media only screen and (max-width: 960px) {
 .nav {
     margin-left: 3%;
     margin-right: 5%;
@@ -708,11 +708,11 @@ padding-left: 30px;
     width: 100%;
     margin-top: 40px;
     align-items: center;
-    
+
   }
 }
 
-@media only screen and (max-width: 850px) { 
+@media only screen and (max-width: 850px) {
 
   .parrafofix {
     left:5vw;
@@ -721,7 +721,7 @@ padding-left: 30px;
 }
 
 
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 769px) {
 
 
 #digital_core {
@@ -802,11 +802,11 @@ left: 20px;
   }
 
   .btn_read_bottom {
-    
+
     margin-left: 69%;
   }
   .img-1-box-blue {
-    
+
   }
   .box_bluex h2 {
     padding-top: 15px;
@@ -878,7 +878,7 @@ left: 20px;
   }
 
   .post-intro-wrapper h1.post-title {
-    
+
     width: 320px;
   }
 }
@@ -938,7 +938,7 @@ left: 20px;
 
 
 <div id="WS-SL--content">
-        
+
 
       <section id="life_sciences">
 
@@ -949,16 +949,16 @@ left: 20px;
                                   <h2>Life Sciences</h2>
 
 
-<p>The healthcare ecosystem has transformed drastically during a dramatically short period of time. As a consequence of this radical technological evolution, patient expectations are vastly different than they once were. Patients want to be empowered by their healthcare experience and play an active role in choosing their treatment path. Their well-being is paramount, but it is not merely a physical need, it is a need that is psychological and financial as well.<br/> 
+<p>The healthcare ecosystem has transformed drastically during a dramatically short period of time. As a consequence of this radical technological evolution, patient expectations are vastly different than they once were. Patients want to be empowered by their healthcare experience and play an active role in choosing their treatment path. Their well-being is paramount, but it is not merely a physical need, it is a need that is psychological and financial as well.<br/>
 Life Sciences organizations (as an entity or across each brand) can address and solve these complex problems by providing sophisticated solutions through a patient-centric approach to healthcare. Interactions must be personalized so patients can access their individual data, lab results, health and support groups. By gaining access to tools such as these, patients begin to truly possess the necessary knowledge to use their voices effectively during treatment. <br/><br/>
-From strategy through execution, we deliver award-winning self-service applications and the infrastructure to run them on. Our multi-disciplinary teams of strategists, designers, technologists and data experts imagine, design, develop, and implement flexible digital strategies that respond to emerging trends in technology healthcare—driving patient engagement as well as IT efficiencies and cost savings. Further, Anexinet has deep experience helping Life Sciences organizations at all levels of technological maturity modernize their core infrastructure from end-to-end to support their new strategy direction, empower patients, and promote enablement in line with user expectations. Finally, we keep honing your strategy and applications through trends and insights gleaned from advanced analytics to ensure your digital experience always keeps pace with the evolution of technology.    
+From strategy through execution, we deliver award-winning self-service applications and the infrastructure to run them on. Our multi-disciplinary teams of strategists, designers, technologists and data experts imagine, design, develop, and implement flexible digital strategies that respond to emerging trends in technology healthcare—driving patient engagement as well as IT efficiencies and cost savings. Further, Anexinet has deep experience helping Life Sciences organizations at all levels of technological maturity modernize their core infrastructure from end-to-end to support their new strategy direction, empower patients, and promote enablement in line with user expectations. Finally, we keep honing your strategy and applications through trends and insights gleaned from advanced analytics to ensure your digital experience always keeps pace with the evolution of technology.
 </p>
                                 </div>
 
-                      
+
                                 <div class="dereparrafo">
 
-                                      
+
                                       <div class="bg_white_box_shadow">
                                         <div class="circ_white"></div>
 
@@ -970,7 +970,7 @@ From strategy through execution, we deliver award-winning self-service applicati
                                       </div>
 
                                 </div>
-                               
+
                     </div>
 
       </section>
@@ -1013,7 +1013,7 @@ Through the implementation of scalable platforms to support long-term engagement
 
 
 
-                                
+
 
 
                     </div>
@@ -1041,10 +1041,10 @@ Through the implementation of scalable platforms to support long-term engagement
 Anexinet’s modern work solutions enable clients to realize successful outcomes, including increased employee productivity, enhanced customer experiences, and additional market share. But achieving these outcomes requires understanding your organization’s key business drivers, identifying opportunities for innovation, and creating a strategy and actionable roadmap aligned with your strategic objectives.</p>
                </div>
 
-     
+
                <div class="dereparrafo">
 
-                     
+
                      <div class="bg_white_box_shadow">
                        <div class="circ_white"></div>
 
@@ -1056,7 +1056,7 @@ Anexinet’s modern work solutions enable clients to realize successful outcomes
                      </div>
 
                </div>
-              
+
    </div>
 
 </section>
@@ -1122,7 +1122,7 @@ Anexinet’s modern work solutions enable clients to realize successful outcomes
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 
@@ -1140,16 +1140,16 @@ if ($(window).width() < 600) {
       var hT = $('.anxnt-main-form').offset().top-600;
     }else {
       var hT = $('.anxnt-main-form').offset().top-370;
-    }  
+    }
 }
-   
+
 
 
   var hH = $('.anxnt-main-form').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-  
-   if (wS > (hT+hH-wH)){      
+
+   if (wS > (hT+hH-wH)){
       $('#WS-ScroLi').css('opacity', '0');
    }else {
       $('#WS-ScroLi').css('opacity', '1');
@@ -1168,16 +1168,16 @@ if ($(window).width() < 600) {
       speed: 1000,
       collapsedHeight: 278,
       afterToggle: function(trigger, element, expanded) {
-        
+
         if(! expanded) { // The "Close" link was clicked
           $('html, body').animate({scrollTop: element.offset().top - 100}, {duration: 100});
         //alert("si22");
        $('.clearsocial').fadeIn(0);
-        
+
         $('.img-1-box-blue').attr('src','https://www.anexinet.com/wp-content/uploads/2020/05/box-blue-fix2.png');
         }else {
         //  alert("si11");
-        
+
         $('.clearsocial').hide(0);
         $('.img-1-box-blue').attr('src','https://www.anexinet.com/wp-content/uploads/2020/05/largeblue.png');
         }
@@ -1200,7 +1200,7 @@ $( function() {
             validEnd : {
                 status  : false
             },
-          
+
             sections : [
                 [ '#life_sciences', '<a href="#life_sciences">Life Sciences</a>' ],
                 [ '#patient_services', '<a href="#patient_services">Engage:<br/> Patient Services</a>' ],
@@ -1256,9 +1256,9 @@ function topFunction() {
 </script>
 
 <!-- Anexinet Main Form Begin -->
-<?php include('form.php'); ?> 
+<?php include('form.php'); ?>
 <!-- Anexinet Main Form End -->
-    
+
 	<?php if(!$full_pages == true) {echo '</div>';}?>
 
 </div>

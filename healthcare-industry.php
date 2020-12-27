@@ -4,13 +4,13 @@
  * Template Name: Healthcare Industry
  *
  * @package      Page Template
- * @author       Britt McCormick 
+ * @author       Britt McCormick
  * @copyright    Copyright (c) 2020, Anexinet
  * @license      https://opensource.org/licenses/gpl-2.0.php GNU Public License
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,19 +38,19 @@ while ( have_posts() ) : the_post(); ?>
 			$intro_bg = get_field('piwo_page_intro_bg','option');
 			$intro_color = get_field('piwo_page_intro_color', 'option');
 		}
-	
+
 		if(get_field('piwo_intro_section') == 'enabled') {
 			$intro_bg = get_field('piwo_intro_bg');
 			$intro_color = get_field('piwo_intro_text_color');
 		}
-	
+
 		if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
 			echo piwo_intro_section($intro_bg,$intro_color);
 		}
-	
+
 	} else {
 		echo piwo_intro_section();
-	
+
   }
   ?>
 
@@ -63,13 +63,13 @@ while ( have_posts() ) : the_post(); ?>
  <!-- / back to top -->
 
  <style>
-	 
+
 	 #engage1 {
-	background-color: #f7f8fa; 
-	height: 1200px; 
-	margin-top: 100px; 
-	max-width: 1240px !important; 
-	margin-left:8%; 
+	background-color: #f7f8fa;
+	height: 1200px;
+	margin-top: 100px;
+	max-width: 1240px !important;
+	margin-left:8%;
 	padding-top: 50px;
 	}
 /* CARRUSEL */
@@ -357,7 +357,7 @@ ul {
 
 .podcastp3 {
     display: inline-block !important;
-    
+
 
 }
 
@@ -635,7 +635,7 @@ ul {
 }
 
 .bg_white_box_shadow p {
-    
+
     line-height: 24px !important;
     text-align: center;
 }
@@ -1230,14 +1230,14 @@ h2 {
 #data_analytics {
     min-height: 2000px;
 }
-	 
+
 @media only screen and (min-width: 1450px) {
 	 #engage1 {
-	background-color: #f7f8fa; 
-	height: 1200px; 
-	margin-top: 100px; 
-	max-width: 1240px !important; 
-	margin-left:12%; 
+	background-color: #f7f8fa;
+	height: 1200px;
+	margin-top: 100px;
+	max-width: 1240px !important;
+	margin-left:12%;
 	padding-top: 50px;
 	}
  }
@@ -1441,7 +1441,7 @@ h2 {
 
 @media screen and (max-width:900px) {
     .dereparrafo {
-     
+
         margin-top: 40px;
         align-items: center;
 
@@ -1460,7 +1460,7 @@ h2 {
 
     .dereparrafo {
         width: 100%;
-     
+
     }
 
     #data_analytics .container-managed-uno .podcastp3 {
@@ -1511,7 +1511,7 @@ h2 {
         left: -30px;
     }
 
-  
+
 
     .parrafofix {
         left: 8vw;
@@ -1887,7 +1887,7 @@ h2 {
 
  </style>
 
- <?php echo the_content(); ?> 
+ <?php echo the_content(); ?>
 
 <!-- <div class="container container-managed container-socialdataok">
   <div class="izqparrafo">
@@ -1907,14 +1907,14 @@ h2 {
 </div>  -->
 
 
- 
+
  <!-- <section id="kickstarts">
      <div class="container container-managed container-carrusel">
          <h2>Kickstarts</h2> -->
 
-         <?php 
+         <?php
             // $args = array(
-            // 'post_type' => 'kickstart_lp', 
+            // 'post_type' => 'kickstart_lp',
             // 'posts_per_page' => 6,
             // 'orderby' => 'DESC'
             // );
@@ -1948,7 +1948,7 @@ h2 {
 
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
  <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
  <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
  <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/owl.carousel.min.js"></script>

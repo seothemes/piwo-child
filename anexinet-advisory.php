@@ -10,7 +10,7 @@
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,25 +38,25 @@ while ( have_posts() ) : the_post(); ?>
 			$intro_bg = get_field('piwo_page_intro_bg','option');
 			$intro_color = get_field('piwo_page_intro_color', 'option');
 		}
-	
+
 		if(get_field('piwo_intro_section') == 'enabled') {
 			$intro_bg = get_field('piwo_intro_bg');
 			$intro_color = get_field('piwo_intro_text_color');
 		}
-	
+
 		if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
 			echo piwo_intro_section($intro_bg,$intro_color);
 		}
-	
+
 	} else {
 		echo piwo_intro_section();
-	
+
   }
   ?>
 
 
 <!--  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-  
+
 
 <!-- back to top -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.anexinet.com/wp-content/uploads/2020/03/back-to-top.png" alt="Back to top"/></button>
@@ -189,7 +189,7 @@ font-family: Lato;
   font-size: 12px;
   color: #3d3d3b;
 }
-           
+
 .learmore-carru {
   font-family: Lato;
   font-size: 12px;
@@ -227,7 +227,7 @@ width: 100%;
 .owl-carousel-kick{
  margin-bottom: 70px;
 }
- 
+
 .owl-carousel-kick .item {
    min-height: 350px;
    padding: 20px 8px;
@@ -243,8 +243,8 @@ width: 100%;
  .owl-carousel-kick .owl-item{
    min-height: 385px;
    padding: 20px;
-   
-   
+
+
  }
 
 .owl-carousel-kick .item p{
@@ -264,7 +264,7 @@ width: 100%;
 .owl-carousel-assessments{
  margin-bottom: 70px;
 }
- 
+
 .owl-carousel-assessments .item {
    min-height: 350px;
    padding: 20px 8px;
@@ -281,8 +281,8 @@ width: 100%;
  .owl-carousel-assessments .owl-item{
    min-height: 385px;
    padding: 20px;
-   
-   
+
+
  }
 
 .owl-carousel-assessments .item p{
@@ -478,7 +478,7 @@ background-color: #f7f8fa !important;
 }
 
 .txt-white-box-blue {
-  
+
   padding-right:100px;
   font-family: Lato;
   font-size: 20px;
@@ -541,7 +541,7 @@ background-color: #f7f8fa !important;
 
 
 .dereparrafo{
-  
+
 }
 
 .bg_white_box_parrap {
@@ -554,7 +554,7 @@ background-color: #f7f8fa !important;
     min-height: 900px;
     top: 50px;
     margin-top: 40px !important;
-   
+
     }
 
 .imggirlblue:hover {
@@ -583,7 +583,7 @@ padding-top: 0px !important;
     height: 100%;
     width: 100%;
     z-index: 1;
-   
+
 
   }
 
@@ -681,10 +681,10 @@ ul li {
   margin-bottom: 0px;
   margin-left: 20px;
 }
-	
+
 ul li::before {
     color: #3887d7 !important;
-}	
+}
 	ul {
 		list-style-type: none !important;
 	}
@@ -696,7 +696,7 @@ ul li::before {
     width: 1em;
     margin-left: -1em;
 }
-	
+
 h3 {
   font-weight: 700;
 }
@@ -866,7 +866,7 @@ h3 {
 }
 #WS-ScroLi [class^="item"].current a {}
 body {
- 
+
 }
 body #header {
   height: 1000px;
@@ -906,7 +906,7 @@ body #description p {
   margin-top: -5px;
 }
 .item-4 .line, .item-4 .line-animation {
- display: none !important; 
+ display: none !important;
 }
 .icon-text {
 margin-top: -19px;
@@ -1099,7 +1099,7 @@ h2 {
 
 #assessments_kickstarts .container-managed-uno {
   padding-top: 85px !important;
-  
+
 
 }
 
@@ -1109,7 +1109,7 @@ h2 {
   min-height: 800px;
 }
 #enterprise_architecture{
- 
+
 }
 #assessments_kickstarts {
   min-height: 1160px;
@@ -1126,7 +1126,7 @@ h2 {
 }
 
 .parrafofix {
- 
+
 
 }
 
@@ -1206,7 +1206,7 @@ height: 700px;
 
 
 .txt-white-box-blue {
- 
+
     font-size: 18px;
 
     }
@@ -1255,7 +1255,7 @@ padding-top: 17px;
     padding-top: 26px;
   }
   .btn_read_bottom {
-  
+
     margin-left: 73%;
     margin-top: -35px;
   }
@@ -1267,7 +1267,7 @@ padding-top: 17px;
 
 
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 
   #data_analytics {
     min-height: 1100px;
@@ -1300,7 +1300,7 @@ padding-top: 17px;
 }
 
 .container {
-   
+
   }
 
 
@@ -1362,7 +1362,7 @@ padding-left: 30px;
 
 
 
-@media only screen and (max-width: 960px) { 
+@media only screen and (max-width: 960px) {
 .nav {
     margin-left: 3%;
     margin-right: 5%;
@@ -1378,11 +1378,11 @@ padding-left: 30px;
     width: 100%;
     margin-top: 40px;
     align-items: center;
-    
+
   }
 }
 
-@media only screen and (max-width: 850px) { 
+@media only screen and (max-width: 850px) {
 
   .parrafofix {
     left:4vw;
@@ -1391,7 +1391,7 @@ padding-left: 30px;
 }
 
 
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 769px) {
 
 
 #data_analytics {
@@ -1426,17 +1426,17 @@ padding-left: 30px;
 }
 
 .container-apprefresh {
-    
+
     left: 160px;
   }
 
   .container-apprefresh2 {
-    
+
     left: 160px;
   }
 
 .podcastp1, .podcastp11 {
-  
+
     width: 100% !important;
     position: relative !important;
   }
@@ -1561,7 +1561,7 @@ padding-left: 30px;
 
 
 .txt-white-box-blue {
-    
+
     line-height: 20px;
   }
 
@@ -1594,11 +1594,11 @@ left: 0px;
   }
 
   .btn_read_bottom {
-    
+
     margin-left: 69%;
   }
   .img-1-box-blue {
-    
+
   }
   .box_bluex h2 {
     padding-top: 15px;
@@ -1723,7 +1723,7 @@ left: 0px;
   }
 
   .post-intro-wrapper h1.post-title {
-    
+
     width: 320px;
   }
 
@@ -1846,38 +1846,38 @@ left: 0px;
       <section id="assessments">
         <div class="container container-managed container-carrusel">
           <h2>Assessments</h2>
-      <?php 
+      <?php
       /*
      $args = array(
-    'post_type' => 'kickstart_lp', 
+    'post_type' => 'kickstart_lp',
     'posts_per_page' => 6,
     'orderby' => 'DESC'
     );
       */
         $args = array(
-        'post_type' => 'page', 
+        'post_type' => 'page',
         'post__in' => array(59016, 58712, 58581, 58704, 58725),
         'posts_per_page' => 6,
         'orderby' => 'DESC',
         //     'tax_query' => array(
         //     array(
         //         'taxonomy' => 'cat_kickstarts_lp',
-        //         'field' => 'slug', 
-        //         'terms' => 'assessments' 
+        //         'field' => 'slug',
+        //         'terms' => 'assessments'
         //     )
         //  )
       );
         global $the_query_category;
                $the_query_category = new WP_Query( $args );
                if ( $the_query_category->have_posts() ) :
-    ?>  
+    ?>
 
-             
+
       <div class="owl-carousel owl-carousel-assessments owl-theme">
-        <?php while ( $the_query_category->have_posts() ) : $the_query_category->the_post();  ?>  
+        <?php while ( $the_query_category->have_posts() ) : $the_query_category->the_post();  ?>
 
         <div class="item">
-          
+
           <div class="img-carru">
           <a href="<?php the_permalink(); ?>">  <?php the_post_thumbnail('square-size'); ?> </a>
           </div>
@@ -1901,39 +1901,39 @@ left: 0px;
       <div class="container container-managed container-carrusel">
         <h2>Kickstarts</h2>
 
-      <?php 
+      <?php
         /*
         $args = array(
-        'post_type' => 'kickstart_lp', 
+        'post_type' => 'kickstart_lp',
         'posts_per_page' => 6,
         'orderby' => 'DESC'
         );*/
 
         $args = array(
-        'post_type' => 'page', 
+        'post_type' => 'page',
         'post__in' => array(58737, 58843, 58704, 58733, 58712, 58724, 58744, 58717, 58681, 58791, 58737, 58698, 58669, 58786, 58760, 58749),
          'posts_per_page' => 24,
         'orderby' => 'DESC',
             // 'tax_query' => array(
             // array(
             //     'taxonomy' => 'cat_kickstarts_lp',
-            //     'field' => 'slug', 
-            //     'terms' => 'kickstarts' 
+            //     'field' => 'slug',
+            //     'terms' => 'kickstarts'
             //   )
             // )
           );
-   
+
         global $the_query_category;
                $the_query_category = new WP_Query( $args );
                if ( $the_query_category->have_posts() ) :
-      ?>  
+      ?>
 
-             
+
       <div class="owl-carousel owl-carousel-kick owl-theme">
-        <?php while ( $the_query_category->have_posts() ) : $the_query_category->the_post();  ?>  
+        <?php while ( $the_query_category->have_posts() ) : $the_query_category->the_post();  ?>
 
         <div class="item">
-          
+
           <div class="img-carru">
            <a href="<?php the_permalink(); ?>"></a> <?php the_post_thumbnail('square-size'); ?>
           </div>
@@ -1941,7 +1941,7 @@ left: 0px;
         <a href="<?php the_permalink(); ?>">  <h3 class="tit-carru"><?php the_title(); ?></h3> </a>
         <a href="<?php the_permalink(); ?>"> <p class="desc-carru"><?php the_excerpt(); ?></p> </a>
           <a class="learmore-carru" href="<?php the_permalink(); ?>" target="_blank" >LEARN MORE</a>
-        
+
         </div>
           <?php endwhile; wp_reset_query(); ?>
       </div> <!-- owl carrusel -->
@@ -1954,7 +1954,7 @@ left: 0px;
 
 </div><!-- bg X -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/owl.carousel.min.js"></script>
@@ -1977,16 +1977,16 @@ if ($(window).width() < 600) {
       var hT = $('.anxnt-main-form').offset().top-600;
     }else {
       var hT = $('.anxnt-main-form').offset().top-370;
-    }  
+    }
 }
-   
+
 
 
   var hH = $('.anxnt-main-form').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-  
-   if (wS > (hT+hH-wH)){      
+
+   if (wS > (hT+hH-wH)){
       $('#WS-ScroLi').css('opacity', '0');
    }else {
       $('#WS-ScroLi').css('opacity', '1');
@@ -2073,12 +2073,12 @@ $( function() {
             validEnd : {
                 status  : false
             },
-          
+
             sections : [
                 [ '#anexinet_advisory', '<a href="#anexinet_advisory">Anexinet <br/>Advisory</a>' ],
                 [ '#enterprise_architecture', '<a href="#enterprise_architecture">Enterprise<br/> Architecture</a>' ],
                 [ '#assessments_kickstarts', '<a href="#assessments_kickstarts">Assessments & Kickstarts </a>' ]
-            
+
             ],
             position : {
                 x : ['left','auto'],
@@ -2129,9 +2129,9 @@ function topFunction() {
 </script>
 
 <!-- Anexinet Main Form Begin -->
-<?php include('form.php'); ?> 
+<?php include('form.php'); ?>
 <!-- Anexinet Main Form End -->
-    
+
 	<?php if(!$full_pages == true) {echo '</div>';}?>
 
 </div>

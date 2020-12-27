@@ -10,7 +10,7 @@
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,25 +38,25 @@ while ( have_posts() ) : the_post(); ?>
 			$intro_bg = get_field('piwo_page_intro_bg','option');
 			$intro_color = get_field('piwo_page_intro_color', 'option');
 		}
-	
+
 		if(get_field('piwo_intro_section') == 'enabled') {
 			$intro_bg = get_field('piwo_intro_bg');
 			$intro_color = get_field('piwo_intro_text_color');
 		}
-	
+
 		if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
 			echo piwo_intro_section($intro_bg,$intro_color);
 		}
-	
+
 	} else {
 		echo piwo_intro_section();
-	
+
   }
   ?>
 
 
 <!--  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-  
+
 
 <!-- back to top -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.anexinet.com/wp-content/uploads/2020/03/back-to-top.png" alt="Back to top"/></button>
@@ -117,10 +117,10 @@ ul li {
   margin-bottom: 0px;
   margin-left: 20px;
 }
-	
+
 ul li::before {
     color: #3887d7 !important;
-}	
+}
 	ul {
 		list-style-type: none !important;
 	}
@@ -132,7 +132,7 @@ ul li::before {
     width: 1em;
     margin-left: -1em;
 }
-	
+
 h3 {
   font-weight: 700;
 }
@@ -302,7 +302,7 @@ h3 {
 }
 #WS-ScroLi [class^="item"].current a {}
 body {
- 
+
 }
 body #header {
   height: 1000px;
@@ -342,7 +342,7 @@ body #description p {
   margin-top: -5px;
 }
 .item-5 .line, .item-5 .line-animation {
- display: none !important; 
+ display: none !important;
 }
 .icon-text {
 margin-top: -19px;
@@ -435,7 +435,7 @@ h2 {
     left: -20%;
     margin-left: 19%;
 }
-	
+
 .img-1-box-blue {
   position: relative;
   float: left;
@@ -589,14 +589,14 @@ padding-top: 17px;
     padding-top: 26px;
   }
   .btn_read_bottom {
-  
+
     margin-left: 73%;
     margin-top: -35px;
   }
 }
 
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 
   #managed_infraestructure {
     min-height: 1319px;
@@ -634,7 +634,7 @@ padding-left: 30px;
 }
 
 
-@media only screen and (max-width: 960px) { 
+@media only screen and (max-width: 960px) {
 .nav {
     margin-left: 3%;
     margin-right: 5%;
@@ -649,11 +649,11 @@ padding-left: 30px;
     width: 300px;
     margin-top: 40px;
     align-items: center;
-    
+
   }
 }
 
-@media only screen and (max-width: 850px) { 
+@media only screen and (max-width: 850px) {
 
   .parrafofix {
     left:5vw;
@@ -662,7 +662,7 @@ padding-left: 30px;
 }
 
 
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 769px) {
 
 
 #managed_infraestructure {
@@ -747,11 +747,11 @@ left: 20px;
   }
 
   .btn_read_bottom {
-    
+
     margin-left: 69%;
   }
   .img-1-box-blue {
-    
+
   }
   .box_bluex h2 {
     padding-top: 15px;
@@ -823,7 +823,7 @@ left: 20px;
   }
 
   .post-intro-wrapper h1.post-title {
-    
+
     width: 320px;
   }
 }
@@ -876,7 +876,7 @@ left: 20px;
 
 <?php echo the_content(); ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 
@@ -894,16 +894,16 @@ if ($(window).width() < 600) {
       var hT = $('.anxnt-main-form').offset().top-600;
     }else {
       var hT = $('.anxnt-main-form').offset().top-370;
-    }  
+    }
 }
-   
+
 
 
   var hH = $('.anxnt-main-form').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-  
-   if (wS > (hT+hH-wH)){      
+
+   if (wS > (hT+hH-wH)){
       $('#WS-ScroLi').css('opacity', '0');
    }else {
       $('#WS-ScroLi').css('opacity', '1');
@@ -926,7 +926,7 @@ if ($(window).width() < 600) {
           $('html, body').animate({scrollTop: element.offset().top - 100}, {duration: 100});
         //alert("si22");
        $('.clearsocial').fadeIn(0);
-        
+
         $('.img-1-box-blue').attr('src','https://www.anexinet.com/wp-content/uploads/2020/05/box-blue-fix2.png');
         }else {
         //  alert("si11");
@@ -948,7 +948,7 @@ $( function() {
             validEnd : {
                 status  : false
             },
-          
+
             sections : [
                 [ '#managed_services', '<a href="#managed_services">Managed Services​</a>' ],
                 [ '#managed_applications', '<a href="#managed_applications">Managed Applications</a>' ],
@@ -1001,9 +1001,9 @@ function topFunction() {
 </script>
 
 <!-- Anexinet Main Form Begin -->
-<?php include('form.php'); ?> 
+<?php include('form.php'); ?>
 <!-- Anexinet Main Form End -->
-    
+
 	<?php if(!$full_pages == true) {echo '</div>';}?>
 
 </div>

@@ -1,4 +1,4 @@
-<?php 
+<?php
     if(function_exists('get_field')) {
         $body_color = get_field('piwo_text_color', 'option');
     } else {
@@ -11,7 +11,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0">
 <meta http-equiv='X-UA-Compatible' content='IE=11'>
-<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"> 
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-9689350-2"></script>
 <script defer>
@@ -22,17 +22,17 @@
 </script>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <?php wp_head(); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script type="text/javascript" >
   jQuery(window).resize(function() {
     if (jQuery(window).width() > 1200) {
       jQuery("#box_menu_cetered").css("display", "block").addClass("testo");
     }
-    else {    
+    else {
     }
   });
-jQuery(document).ready(function ($) {    
-  if (jQuery(window).width() > 1200) { 
+jQuery(document).ready(function ($) {
+  if (jQuery(window).width() > 1200) {
   }
  else {
 
@@ -71,7 +71,7 @@ jQuery('.btn-expertise-menu .a-level-0').click(function(e) {
     return false;
 
     }else {
-     
+
       return true;
     }
 });
@@ -99,10 +99,10 @@ jQuery( "#box_menu_cetered .level-0:not(.btn-expertise-menu) .a-level-0" ).click
 
 
     }else {
-     
+
       return true;
-      
-    }           
+
+    }
       });
  }
 
@@ -121,7 +121,7 @@ $('.btn-cerrar').click(function(e){
     $(this).fadeOut(0);
     $('.btn-ham').fadeIn(0);
 });
-    
+
     $( ".box-menu-post-managedservices" ).clone().insertAfter( ".menupostcat_managedservices" );
     $( ".contendor_posts_menu .box-menu-post-managedservices" ).remove();
 
@@ -203,38 +203,38 @@ $('.btn-cerrar').click(function(e){
     color: #187bcd !important;
   }
   #menu-new_menu_centered #menu-item-61142>a:not(:only-child):after{
-  background-image: url('/wp-content/uploads/2020/09/Path_gray.png'); 
+  background-image: url('/wp-content/uploads/2020/09/Path_gray.png');
     background-size: contain;
     display: inline-block;
     width: 13px;
-    height: 7px; 
+    height: 7px;
     margin-left: 7px;
     content: "";
 }
 #menu-new_menu_centered #menu-item-57907>a:not(:only-child):after{
-  background-image: url('/wp-content/uploads/2020/09/Path_gray.png'); 
+  background-image: url('/wp-content/uploads/2020/09/Path_gray.png');
     background-size: contain;
     display: inline-block;
     width: 13px;
-    height: 7px; 
+    height: 7px;
     margin-left: 7px;
     content: "";
 }
 #menu-new_menu_centered #menu-item-61100>a:not(:only-child):after{
-  background-image: url('/wp-content/uploads/2020/09/Path_gray.png'); 
+  background-image: url('/wp-content/uploads/2020/09/Path_gray.png');
     background-size: contain;
     display: inline-block;
     width: 13px;
-    height: 7px; 
+    height: 7px;
     margin-left: 7px;
     content: "";
 }
 #menu-new_menu_centered #menu-item-57908>a:not(:only-child):after{
-  background-image: url('/wp-content/uploads/2020/09/Path_gray.png'); 
+  background-image: url('/wp-content/uploads/2020/09/Path_gray.png');
   background-size: contain;
   display: inline-block;
   width: 13px;
-  height: 7px; 
+  height: 7px;
   margin-left: 7px;
   content: "";
 }
@@ -253,16 +253,16 @@ $('.btn-cerrar').click(function(e){
 }
 
  /* #menu-item-57907 .a-level-0 span::after{
-    background-image: url('/wp-content/uploads/2020/09/Path_gray.png'); 
+    background-image: url('/wp-content/uploads/2020/09/Path_gray.png');
     background-size: contain;
     display: inline-block;
     width: 13px;
-    height: 7px; 
+    height: 7px;
     margin-left: 7px;
     content: "";
 }  */
 /* #menu-item-57907 .a-level-0 span:hover(:only-child):after{
-  background-image: url('/wp-content/uploads/2020/09/Path.png'); 
+  background-image: url('/wp-content/uploads/2020/09/Path.png');
     background-size: contain;
     background-size: 8px;
     display: inline-block;
@@ -321,7 +321,7 @@ $('.btn-cerrar').click(function(e){
 
 <nav id="box_menu_cetered" class="testo24">
   <div class="container-menu-centered">
-    <?php 
+    <?php
     wp_nav_menu( array(
         'menu' => 'new_menu_centered',
         'link_before' => '<span>',
@@ -329,18 +329,18 @@ $('.btn-cerrar').click(function(e){
         //'walker' => 'new_menu_centered',
         'walker' => new My_Walker_Nav_Menu()
     ) );
-    ?> 
-    
-     
-     </div> 
+    ?>
+
+
+     </div>
   </div>
   <div class="contendor_posts_menu">
-    <?php   
+    <?php
       global $post;
       $args = array(
         'post_type' => 'post',
         'posts_per_page' => '1',
-        'order' => 'DESC', 
+        'order' => 'DESC',
         'tax_query' => array(
             array(
                 'taxonomy' => 'category',
@@ -354,7 +354,7 @@ $('.btn-cerrar').click(function(e){
     global $the_query_category;
     $the_query_category = new WP_Query( $args );
     if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
-    
+
           ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-managedservices box-menu-post">
@@ -363,10 +363,10 @@ $('.btn-cerrar').click(function(e){
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">read more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">read more about:<br/><?php the_title(); ?></a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -387,7 +387,7 @@ $('.btn-cerrar').click(function(e){
         global $the_query_category;
         $the_query_category = new WP_Query( $args );
         if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
-        
+
               ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-managedservices box-menu-webinar">
@@ -398,16 +398,16 @@ $('.btn-cerrar').click(function(e){
             <h3>VIEWPOINT</h3>
 
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
 
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
 
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -416,7 +416,7 @@ $('.btn-cerrar').click(function(e){
 <!-- no posts found -->
     <?php endif; ?>
 
-    <?php   
+    <?php
       global $post;
         $args = array(
         'post_type' => 'post',
@@ -431,16 +431,16 @@ $('.btn-cerrar').click(function(e){
           ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-advisory-services box-menu-post">
-               
+
            <div class="img-cont-box-menu">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Learn more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">Learn more about:<br/><?php the_title(); ?></a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -450,7 +450,7 @@ $('.btn-cerrar').click(function(e){
     <?php endif; ?>
 
 <!-- Cloud -->
-<?php   
+<?php
   global $post;
     $args = array(
     'post_type' => 'anxt_ebooks',
@@ -462,20 +462,20 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-cloud-hybrid box-menu-post">
-               
+
            <div class="img-cont-box-menu">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -485,7 +485,7 @@ $('.btn-cerrar').click(function(e){
     <?php endif; ?>
 <!-- /Cloud -->
 <!-- Connected Experiences -->
-<?php   
+<?php
   global $post;
     $args = array(
     'post_type' => 'page',
@@ -497,7 +497,7 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-connectedexperiences box-menu-post">
@@ -505,9 +505,9 @@ $('.btn-cerrar').click(function(e){
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Learn more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">Learn more about:<br/><?php the_title(); ?></a>
            </div>
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -517,7 +517,7 @@ $('.btn-cerrar').click(function(e){
     <?php endif; ?>
 <!-- /Connected Experiences -->
 <!-- Related Conetnt Post Networking -->
-<?php   
+<?php
   global $post;
     $args = array(
     'post_type' => 'page',
@@ -529,20 +529,20 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-networking box-menu-post">
-               
+
            <div class="img-cont-box-menu">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -552,7 +552,7 @@ $('.btn-cerrar').click(function(e){
     <?php endif; ?>
 <!-- /Related Content Post Networking -->
 <!-- Data Analytics -->
-<?php   
+<?php
   global $post;
     $args = array(
     'post_type' => 'anxt_ebooks',
@@ -564,20 +564,20 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-dataanalytics box-menu-post">
-               
+
            <div class="img-cont-box-menu">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -587,7 +587,7 @@ $('.btn-cerrar').click(function(e){
     <?php endif; ?>
 <!-- /Data Analytics -->
 <!-- Data Center -->
-<?php   
+<?php
   global $post;
     $args = array(
     'post_type' => 'anxt_ebooks',
@@ -599,20 +599,20 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-datacenter box-menu-post">
-               
+
            <div class="img-cont-box-menu">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>">Read more about:<br/><?php the_title(); ?></a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -622,7 +622,7 @@ $('.btn-cerrar').click(function(e){
     <?php endif; ?>
 <!-- /Data Center -->
 
-<?php   
+<?php
   global $post;
     $args = array(
     'post_type' => 'page',
@@ -634,20 +634,20 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-post-productinnovation box-menu-post">
-               
+
            <div class="img-cont-box-menu">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-menu-size');?></a>
            </div>
 
            <div class="title-post-menu">
-              <a href="<?php the_permalink();?>">Canopy Health Case Study </a>         
+              <a href="<?php the_permalink();?>">Canopy Health Case Study </a>
            </div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -670,13 +670,13 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-advisoryservices box-menu-webinar">
 
         <h2>DIVE DEEPER</h2>
-               
+
            <div class="img-cont-box-menu-webinar">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-size');?></a>
            </div>
@@ -684,16 +684,16 @@ $('.btn-cerrar').click(function(e){
             <h3>WEBINAR</h3>
 
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
 
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
 
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -707,7 +707,7 @@ $('.btn-cerrar').click(function(e){
       <div class="box-menu-webinar-cloudhybridit box-menu-webinar">
 
         <h2>PLEASE ENJOY</h2>
-               
+
            <div class="img-cont-box-menu-webinar">
             <a href="https://anexinet.com/infographics/hpe-greenlake/"> <img src="https://www.anexinet.com/wp-content/uploads/2020/06/consutption_2.jpg"></a>
            </div>
@@ -716,17 +716,17 @@ $('.btn-cerrar').click(function(e){
 
            <div class="title-post-menu-webinar">
               <a href="https://anexinet.com/infographics/hpe-greenlake/
-">HPE GreenLake: Flexible, consumption-based Infrastructure for your top workloads</a>         
+">HPE GreenLake: Flexible, consumption-based Infrastructure for your top workloads</a>
            </div>
 
             <div class="desc-post-menu-webinar">
-            Combine the best of Cloud and On-Premises IT to deliver a flexible, as-a-service experience that lets you pay just for what you use     
+            Combine the best of Cloud and On-Premises IT to deliver a flexible, as-a-service experience that lets you pay just for what you use
            </div>
 
            <div class="btn_viewmore_webinar"><a target="_blank" href="https://anexinet.com/infographics/hpe-greenlake/
 ">Read more »</a></div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
 
     <?php
@@ -742,13 +742,13 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-connectedexperiences box-menu-webinar">
 
         <h2>DIVE DEEPER</h2>
-               
+
            <div class="img-cont-box-menu-webinar">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-size');?></a>
            </div>
@@ -756,16 +756,16 @@ $('.btn-cerrar').click(function(e){
             <h3>WEBINAR</h3>
 
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
 
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
 
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -789,13 +789,13 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-cibersecurity box-menu-webinar">
 
         <h2>DIVE DEEPER</h2>
-               
+
            <div class="img-cont-box-menu-webinar">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-size');?></a>
            </div>
@@ -803,16 +803,16 @@ $('.btn-cerrar').click(function(e){
             <h3>WEBINAR</h3>
 
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
 
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
 
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -834,13 +834,13 @@ $('.btn-cerrar').click(function(e){
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-dataanalytics box-menu-webinar">
 
         <h2>DIVE DEEPER</h2>
-               
+
            <div class="img-cont-box-menu-webinar">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-size');?></a>
            </div>
@@ -848,16 +848,16 @@ $('.btn-cerrar').click(function(e){
             <h3>WEBINAR</h3>
 
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
 
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
 
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
 
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -887,7 +887,7 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
     <div class="box-menu-webinar-networking box-menu-webinar">
 
       <h2>PLEASE ENJOY</h2>
-             
+
          <div class="img-cont-box-menu-webinar">
           <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-size');?></a>
          </div>
@@ -895,16 +895,16 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
           <h3>PODCAST</h3>
 
          <div class="title-post-menu-webinar">
-            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
          </div>
 
           <div class="desc-post-menu-webinar">
-            <?php the_excerpt(); ?>     
+            <?php the_excerpt(); ?>
          </div>
 
          <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Listen Now »</a></div>
 
-    </div> 
+    </div>
     <!-- box-menu-blog-post -->
     <?php endwhile;
     wp_reset_query(); ?>
@@ -922,14 +922,14 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
            </div>
             <h3>EBOOK</h3>
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>">Top Reasons Why Your Disaster Recovery is Destined to Fail</a>         
+              <a href="<?php the_permalink();?>">Top Reasons Why Your Disaster Recovery is Destined to Fail</a>
            </div>
             <div class="desc-post-menu-webinar">
-         Downtime and data loss are company-killers. Without a pragmatic Recovery Plan in place, your business may never recover.    
+         Downtime and data loss are company-killers. Without a pragmatic Recovery Plan in place, your business may never recover.
            </div>
            <div class="btn_viewmore_webinar"><a target="_blank" href="https://insights.anexinet.com/top-reasons-why-your-disaster-recovery-is-destined-to-fail
 ">Read more »</a></div>
-      </div> 
+      </div>
       <!-- box-menu-blog-post datacenter -->
 
     <?php
@@ -944,23 +944,23 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
  global $the_query_category;
  $the_query_category = new WP_Query( $args );
  if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
- 
+
       ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-designservices box-menu-webinar">
-        <h2>PLEASE ENJOY</h2>  
+        <h2>PLEASE ENJOY</h2>
            <div class="img-cont-box-menu-webinar">
             <a href="<?php the_permalink();?>"> <?php the_post_thumbnail('square-size');?></a>
            </div>
             <h3>WHITE PAPER</h3>
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -982,7 +982,7 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
       global $the_query_category;
       $the_query_category = new WP_Query( $args );
       if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
-      
+
             ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-futureofwork box-menu-webinar">
@@ -992,13 +992,13 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
            </div>
             <h3>WHITE PAPER</h3>
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>
@@ -1021,7 +1021,7 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
       global $the_query_category;
       $the_query_category = new WP_Query( $args );
       if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_posts() ) : $the_query_category->the_post();
-      
+
             ?>
      <!-- box-menu-blog-post -->
       <div class="box-menu-webinar-productinnovation box-menu-webinar">
@@ -1031,13 +1031,13 @@ if ( $the_query_category->have_posts() ) : while (    $the_query_category->have_
            </div>
             <h3>WHITE PAPER</h3>
            <div class="title-post-menu-webinar">
-              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>         
+              <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
            </div>
             <div class="desc-post-menu-webinar">
-              <?php the_excerpt(); ?>     
+              <?php the_excerpt(); ?>
            </div>
            <div class="btn_viewmore_webinar"><a href="<?php the_permalink();?>">Read more »</a></div>
-      </div> 
+      </div>
       <!-- box-menu-blog-post -->
       <?php endwhile;
       wp_reset_query(); ?>

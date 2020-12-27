@@ -28,8 +28,8 @@ div[data-editorblocktype="SubmitButtonBlock"]{
   width:100% !important;
 }
 #rev_slider_9_2_forcefullwidth{
-  height: 983px !important; 
-} 
+  height: 983px !important;
+}
 .img-cont img:hover{
   transform: none;
     transition: none;
@@ -357,7 +357,7 @@ div[data-editorblocktype="SubmitButtonBlock"]{
  color:#6e6e68;
 }
 .partners .text-cont{
- padding-top:0;  
+ padding-top:0;
  padding-bottom:20px;
 }
 .partners .col-md-7{
@@ -494,7 +494,7 @@ label{
   .service-text-one{
     top: 8.9%;
   }
- 
+
   .service-text-two{
     top: 15%;
   }
@@ -517,16 +517,16 @@ label{
 
 /* @media screen and (min-width:1180px){
   .service-text-one{
- 
+
   }
   .service-text-two{
- 
+
   }
   .service-text-three{
-  
+
   }
   .service-text-four{
-   
+
   }
   .service-text-five{
     top: 36.8%;
@@ -585,7 +585,7 @@ label{
   .service-text-seven{
     top: 43.9%;
   }
-} 
+}
 
 /* @media screen and (min-width:1440px){
   .service-text-one{
@@ -828,7 +828,7 @@ label{
   }
   .service-text-seven{
     top: 43.4%;
-  } 
+  }
 }
 
 @media screen and (max-width:932px){
@@ -852,7 +852,7 @@ label{
   }
   .service-text-seven{
     top: 43.4%;
-  } 
+  }
 }
 
 @media screen and (max-width:900px){
@@ -876,7 +876,7 @@ label{
   }
   .service-text-seven{
     top: 43.7%;
-  } 
+  }
 }
 
 @media screen and (max-width:860px){
@@ -900,7 +900,7 @@ label{
   }
   .service-text-seven{
     top: 43.6%;
-  } 
+  }
 }
 
 @media screen and (max-width:825px){
@@ -924,7 +924,7 @@ label{
   }
   .service-text-seven{
     top: 43.6%;
-  } 
+  }
 }
 
 @media screen and (max-width:800px){
@@ -948,7 +948,7 @@ label{
   }
   .service-text-seven{
     top: 43.8%;
-  } 
+  }
 }
 
 @media screen and (max-width:768px){
@@ -1115,7 +1115,7 @@ label{
      <div class="main-title" data-aos="zoom-in">
       <h1>Empowering what’s next</h1>
       <h2>Award-winning applications and the infrastructure to run them on.</h2>
-    </div> 
+    </div>
   </div> -->
 </section>
 
@@ -1137,7 +1137,7 @@ label{
     <img src="/wp-content/uploads/2020/07/cloudit.png" class="mb-20-home" alt="">
       <h2>Cloud & Hybrid IT</h2>
       <h3>Accelerate automation, standardization, scalability, and agility in the Public Cloud or your on-premises Data Center. </h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/cloud-hybrid-it/">IGNITE INNOVATION WITH CLOUD ></a>
       </div>
     </div>
@@ -1146,7 +1146,7 @@ label{
     <img src="/wp-content/uploads/2020/07/connected-exp.png" class="mb-20-home" alt="">
       <h2>Connected Experiences</h2>
       <h3>Engage customers and employees across the entire journey and deliver a digital ecosystem of multi-channel services and experiences.</h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/connected-experiences/">RE-IMAGINE ENGAGEMENT ></a>
       </div>
     </div>
@@ -1155,7 +1155,7 @@ label{
     <img src="/wp-content/uploads/2020/07/cyber-sec.png" class="mb-20-home" alt="">
       <h2>Cyber Security</h2>
       <h3>Ward off threats to your applications, data, and infrastructure at every layer via our holistic security approach</h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/cybersecurity/">GET PROTECTED ></a>
       </div>
     </div>
@@ -1164,7 +1164,7 @@ label{
     <img src="/wp-content/uploads/2020/07/datacenter.png" class="mb-20-home" alt="">
       <h2>Data Center</h2>
       <h3>Ensure best-in-breed Data Center Modernization solutions across computing, network, and storage thanks to our elite technology partnerships.</h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/data-center/">SIMPLIFY YOUR OPERATIONS ></a>
       </div>
     </div>
@@ -1177,7 +1177,7 @@ label{
     <img src="/wp-content/uploads/2020/07/future-work.png" class="mb-20-home" alt="">
       <h2>Future of Work</h2>
       <h3>Increase operational efficiencies and enable employees with intelligent, user-centric solutions.</h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/future-of-work/">PREPARE FOR TOMORROW ></a>
       </div>
     </div>
@@ -1186,7 +1186,7 @@ label{
     <img src="/wp-content/uploads/2020/07/networking.png" class="mb-20-home" alt="">
       <h2>Networking</h2>
       <h3>Modernize your network for increased stability and scalability and to ensure the security of cloud data and remote workforces. </h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/networking/">GET CONNECTED ></a>
       </div>
     </div>
@@ -1195,7 +1195,7 @@ label{
     <img src="/wp-content/uploads/2020/07/p-innovation.png" class="mb-20-home" alt="">
       <h2>Product Innovation</h2>
       <h3>Engineer game-changing platforms and applications to generate compelling experiences and uncover new revenue streams.​</h3>
-      <div class="circle-a"> 
+      <div class="circle-a">
         <a href="https://www.anexinet.com/product-innovation/">ACCELERATE SUCCESS</a>
       </div>
     </div>
@@ -1245,7 +1245,7 @@ label{
                 <a class="learmore-carru" href="https://www.anexinet.com/case-studies-testimonials/travel-and-transport/" target="_blank">View Case Studie</a>
               </div>
             </div> -->
-    
+
           </div> <!-- owl carrusel -->
       </section>
 <!-- /Case Studies Carousel -->
@@ -1265,7 +1265,7 @@ label{
         <a href="/anexinet-advisory/">Know more about us</a>
       </div>
       </div>
-     
+
     </div>
   </div>
 </section>
@@ -1286,7 +1286,7 @@ label{
 
       <div class="col-md-7">
 
-        <div class="img-cont" data-aos="zoom-in">        
+        <div class="img-cont" data-aos="zoom-in">
           <img src="/wp-content/uploads/2020/06/aws-consulting-partner.png" height="108px" width="82px" alt="Aws Consulting Partner">
           <img src="/wp-content/uploads/2020/06/hpe-platinum-partner-2x.png" height="116px" width="111px"  alt="HPE Platinum Partner">
         </div>
@@ -1309,25 +1309,25 @@ label{
         <span data-purecounter-start="0"  data-purecounter-end="5075" data-purecounter-duration="1" data-purecounter-delay="5" class="purecounter">0</span>
         <p class="d-none-desktop">FiNISHED PROJECTS</p>
       </div>
-       
+
       <div class="counter-cont">
         <span data-purecounter-start="0"  data-purecounter-end="9789" data-purecounter-duration="2" data-purecounter-delay="10" class="purecounter">0
         </span>
         <p class="d-none-desktop">HAPPY CLIENTS</p>
       </div>
-       
+
       <div class="counter-cont">
         <span data-purecounter-start="0"  data-purecounter-end="1191000000" data-purecounter-duration="2" data-purecounter-delay="10" class="purecounter">0
         </span>
         <p class="d-none-desktop">LINES OF CODE</p>
       </div>
-      
+
       <div class="counter-cont">
         <span data-purecounter-start="0"  data-purecounter-end="133000000" data-purecounter-duration="2" data-purecounter-delay="10" class="purecounter">0
         </span>
         <p class="d-none-desktop">LINES OF CODE</p>
       </div>
-        
+
     </div>
 
     <div class="counter-text-cont d-none-mobile">
@@ -1354,7 +1354,7 @@ label{
           <h2>Let’s get the conversation started</h2>
           <h5>Reach out now to begin your digital transformation.</h5>
         </div>
-   
+
         <div class="col-md-6">
           <div class="form" id="main_form" data-aos="zoom-in">
             <div data-form-block-id="049dc2e8-73c0-ea11-a812-000d3a33243a"></div> <script src="https://mktdplp102cdn.azureedge.net/public/latest/js/ form-loader.js?v=1.63.1039.0"></script> <div id="dETKvCv7CyC0MsH0kAoRKsP3-3yAVlfPFhIGnRNXRvZ0"></div><script language="javascript" type="text/javascript">(function (id, f, t, ws, ms_tr_il_08, ms_tr_il_w_01) { var tr = function (cb) { var count = 0; var callback = function () { if (count == 0) { count++; if (w) { w.w(id, t, cb); } } }; var ts = document.createElement('script'); ts.src = ws; ts.type = 'text/javascript'; ts.onload = callback; ts.onreadystatechange = function () { if (this.readyState == 'complete' || this.readyState == 'loaded') { callback(); } }; var head = document.getElementsByTagName('head')[0]; head.appendChild(ts); }; if (typeof ms_tr_il_08 === 'function') { if (ms_tr_il_w_01 === null) { tr(function() { ms_tr_il_08(id, f, t); }); } else { ms_tr_il_w_01.w(id, t, function(websiteVisitedParams) { ms_tr_il_08(id, f, t, websiteVisitedParams); }, null); } } else { tr(); }})('ETKvCv7CyC0MsH0kAoRKsP3-3yAVlfPFhIGnRNXRvZ0', 'https://304d97d0c24840d3b17bbd7ce79acb08.svc.dynamics.com/f', 'https://304d97d0c24840d3b17bbd7ce79acb08.svc.dynamics.com/t', 'https://304d97d0c24840d3b17bbd7ce79acb08.svc.dynamics.com/t/w', typeof ms_tr_il_08 === "undefined" ? null : ms_tr_il_08, typeof ms_tr_il_w_01 === "undefined" ? null : ms_tr_il_w_01);</script>
@@ -1415,7 +1415,7 @@ label{
 
 
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+<!--  -->
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/owl.carousel.min.js"></script>
 
 <script>
@@ -1470,7 +1470,7 @@ $(function() {
 </script>
 
 
- <?//php include('form.php'); ?>  
+ <?//php include('form.php'); ?>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

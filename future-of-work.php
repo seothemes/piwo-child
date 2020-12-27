@@ -10,7 +10,7 @@
  *
  */
 ?>
-<?php get_header(); 
+<?php get_header();
 
 $class = $full_pages = $full_class = $col_class = '';
 $post_id = get_the_ID();
@@ -38,19 +38,19 @@ while ( have_posts() ) : the_post(); ?>
 			$intro_bg = get_field('piwo_page_intro_bg','option');
 			$intro_color = get_field('piwo_page_intro_color', 'option');
 		}
-	
+
 		if(get_field('piwo_intro_section') == 'enabled') {
 			$intro_bg = get_field('piwo_intro_bg');
 			$intro_color = get_field('piwo_intro_text_color');
 		}
-	
+
 		if((get_field('piwo_page_intro_section','option') && get_field('piwo_intro_section') == 'default') || get_field('piwo_intro_section') == 'enabled') {
 			echo piwo_intro_section($intro_bg,$intro_color);
 		}
-	
+
 	} else {
 		echo piwo_intro_section();
-	
+
   }
   ?>
 
@@ -475,7 +475,7 @@ li{
     background-size: cover;
     margin-top: 0px !important;
     /* width: 42% !important;
-        left: -30px; 
+        left: -30px;
         position: absolute !important;
         right: 0px; */
 }
@@ -750,7 +750,7 @@ html {
     color: white;
 }
 
-list-style-position: outside; 
+list-style-position: outside;
 
 .ul-style-one::before {
     content: "\2022";
@@ -850,7 +850,7 @@ h3 {
         font-family: Lato;
         color: #6e6e68;
         font-weight: bold;
-    } 
+    }
 
 .green-nav {
     background: #a4ca53;
@@ -1457,7 +1457,7 @@ h2 {
         color: #6e6e68;
         font-weight: bold;
     }
-  
+
 
     .title-podcast-int-box-paper {
         font-size: 12px;
@@ -2242,7 +2242,7 @@ h2 {
     #employee_experience {
         min-height: 1740px;
     }
-    
+
     #field_service_modernization {
         height: 3870px;
     }
@@ -2352,7 +2352,7 @@ display: block;
 
 padding-left: 15px;
 margin-bottom: 16px !important;
-display: block; 
+display: block;
 }*/
 
 </style>
@@ -2363,7 +2363,7 @@ display: block;
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/ws-scroli.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/readmore.js"></script>
 <script src="https://www.anexinet.com/wp-content/themes/piwo-child/public/js/owl.carousel.min.js"></script>
