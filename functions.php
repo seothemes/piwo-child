@@ -54,6 +54,11 @@ add_action( 'wp_enqueue_scripts', function () {
 		'https://fonts.googleapis.com/css?family=Lora'
 	);
 
+	wp_enqueue_style(
+		'anexinet-custom',
+		$stylesheet_dir . '/public/css/custom.css'
+	);
+
 	wp_enqueue_script(
 		'custom-app',
 		$stylesheet_dir . '/public/js/app.js',
