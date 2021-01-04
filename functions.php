@@ -14,6 +14,12 @@ add_action( 'wp_enqueue_scripts', function () {
 	$stylesheet_dir = get_stylesheet_directory_uri();
 
 	wp_enqueue_style(
+		'anexinet-modern',
+		$stylesheet_dir . '/public/css/modern.css',
+		[]
+	);
+
+	wp_enqueue_style(
 		'anexinet-fancybox-style',
 		$stylesheet_dir . '/public/css/jquery.fancybox.css',
 		[]
