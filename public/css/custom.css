@@ -632,3 +632,6 @@ span.num {
 	margin:0 auto !important;
 }
 
+.footer {
+	position: relative !important;
+}
