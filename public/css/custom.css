@@ -635,3 +635,8 @@ span.num {
 .footer {
 	position: relative !important;
 }
+
+.logo-anexinet-centered a {
+	height: 100%;
+	display: block;
+}
